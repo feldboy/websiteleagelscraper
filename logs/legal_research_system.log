@@ -486,3 +486,32 @@ source_url
 2025-07-21 16:29:09,693 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
 2025-07-21 16:29:09,693 - __main__ - INFO - ✅ Database connections closed
 2025-07-21 16:29:09,693 - __main__ - INFO - ✅ System shutdown completed
+2025-07-21 16:32:57,207 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-21 16:32:57,239 - agents.database - INFO - Database agent initialized successfully
+2025-07-21 16:32:57,239 - __main__ - INFO - ✅ Database agent initialized
+2025-07-21 16:32:57,239 - __main__ - INFO - ✅ System configuration verified
+2025-07-21 16:33:01,747 - tools.llm_client - INFO - LLM call successful: 15 tokens, $0.0000, 4.51s
+2025-07-21 16:33:01,747 - __main__ - INFO - ✅ LLM connectivity verified
+2025-07-21 16:33:01,747 - __main__ - INFO - 🎉 System initialization completed successfully
+2025-07-21 16:33:01,747 - __main__ - INFO - Running scraping-only workflow
+2025-07-21 16:33:01,747 - __main__ - INFO - 🔄 Starting scraping-only workflow...
+2025-07-21 16:33:03,507 - agents.web_scraper - INFO - Discovered 0 article URLs for Law.com
+2025-07-21 16:33:03,507 - agents.web_scraper - WARNING - No articles found for source: law_com
+2025-07-21 16:33:07,616 - agents.web_scraper - INFO - Discovered 3 article URLs for Legal Reader
+2025-07-21 16:33:19,476 - agents.web_scraper - INFO - Completed scraping batch 7f764154-f775-4db8-82ce-431a96aa5b6a: 0/3 successful
+2025-07-21 16:33:22,394 - agents.web_scraper - INFO - Discovered 3 article URLs for Above the Law
+2025-07-21 16:33:32,579 - agents.web_scraper - INFO - Completed scraping batch d90ec1f7-9a0f-4eb4-97d5-e0f9f5e63c71: 0/3 successful
+2025-07-21 16:33:36,003 - agents.web_scraper - INFO - Discovered 0 article URLs for Law360 Public
+2025-07-21 16:33:36,004 - agents.web_scraper - WARNING - No articles found for source: law360_backup
+2025-07-21 16:33:38,026 - __main__ - INFO - 🎯 Final Results:
+2025-07-21 16:33:38,026 - __main__ - INFO -   articles_scraped: 0
+2025-07-21 16:33:38,026 - __main__ - INFO -   articles_processed: 0
+2025-07-21 16:33:38,026 - __main__ - INFO -   verification_stats:
+2025-07-21 16:33:38,027 - __main__ - INFO -     total_articles: 3
+2025-07-21 16:33:38,027 - __main__ - INFO -     processed_articles: 0
+2025-07-21 16:33:38,027 - __main__ - INFO -     verification_rate: 0.0
+2025-07-21 16:33:38,027 - __main__ - INFO -     timestamp: 2025-07-21 16:33:38.026667
+2025-07-21 16:33:38,027 - __main__ - INFO -   sources_scraped: 4
+2025-07-21 16:33:38,027 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-21 16:33:38,027 - __main__ - INFO - ✅ Database connections closed
+2025-07-21 16:33:38,027 - __main__ - INFO - ✅ System shutdown completed
