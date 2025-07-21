@@ -1,0 +1,488 @@
+2025-07-21 14:55:38,179 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-21 14:55:38,233 - agents.database - ERROR - Failed to initialize database: role "user" does not exist
+2025-07-21 14:55:38,233 - __main__ - ERROR - ❌ System initialization failed: role "user" does not exist
+2025-07-21 14:55:38,233 - __main__ - ERROR - Failed to initialize system
+2025-07-21 14:55:38,233 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-21 14:55:38,233 - __main__ - INFO - ✅ Database connections closed
+2025-07-21 14:55:38,233 - __main__ - INFO - ✅ System shutdown completed
+2025-07-21 14:55:46,763 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-21 14:55:46,792 - agents.database - ERROR - Failed to initialize database: No module named 'aiosqlite'
+2025-07-21 14:55:46,792 - __main__ - ERROR - ❌ System initialization failed: No module named 'aiosqlite'
+2025-07-21 14:55:46,792 - __main__ - ERROR - Failed to initialize system
+2025-07-21 14:55:46,792 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-21 14:55:46,792 - __main__ - INFO - ✅ Database connections closed
+2025-07-21 14:55:46,792 - __main__ - INFO - ✅ System shutdown completed
+2025-07-21 14:55:57,071 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-21 14:55:57,092 - agents.database - INFO - Database agent initialized successfully
+2025-07-21 14:55:57,092 - __main__ - INFO - ✅ Database agent initialized
+2025-07-21 14:55:57,092 - __main__ - INFO - ✅ System configuration verified
+2025-07-21 14:55:57,720 - tools.llm_client - WARNING - LLM call failed: API Error: Incorrect API key provided: sk-your-***************here. You can find your API key at https://platform.openai.com/account/api-keys.
+2025-07-21 14:55:57,721 - __main__ - ERROR - ❌ LLM connectivity test failed: API Error: Incorrect API key provided: sk-your-***************here. You can find your API key at https://platform.openai.com/account/api-keys.
+2025-07-21 14:55:57,721 - __main__ - ERROR - Failed to initialize system
+2025-07-21 14:55:57,721 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-21 14:55:57,722 - __main__ - INFO - ✅ Database connections closed
+2025-07-21 14:55:57,722 - __main__ - INFO - ✅ System shutdown completed
+2025-07-21 14:56:39,092 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-21 14:56:39,104 - agents.database - INFO - Database agent initialized successfully
+2025-07-21 14:56:39,104 - __main__ - INFO - ✅ Database agent initialized
+2025-07-21 14:56:39,104 - __main__ - INFO - ✅ System configuration verified
+2025-07-21 14:56:41,531 - tools.llm_client - WARNING - LLM call failed: API Error: Insufficient credits. Add more using https://openrouter.ai/settings/credits
+2025-07-21 14:56:41,532 - __main__ - ERROR - ❌ LLM connectivity test failed: API Error: Insufficient credits. Add more using https://openrouter.ai/settings/credits
+2025-07-21 14:56:41,532 - __main__ - ERROR - Failed to initialize system
+2025-07-21 14:56:41,532 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-21 14:56:41,533 - __main__ - INFO - ✅ Database connections closed
+2025-07-21 14:56:41,534 - __main__ - INFO - ✅ System shutdown completed
+2025-07-21 14:56:54,843 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-21 14:56:54,880 - agents.database - INFO - Database agent initialized successfully
+2025-07-21 14:56:54,880 - __main__ - INFO - ✅ Database agent initialized
+2025-07-21 14:56:54,880 - __main__ - INFO - ✅ System configuration verified
+2025-07-21 14:56:54,880 - __main__ - INFO - ⚠️ Skipping LLM connectivity test
+2025-07-21 14:56:54,880 - __main__ - INFO - 🎉 System initialization completed successfully
+2025-07-21 14:56:54,880 - __main__ - INFO - Running complete workflow
+2025-07-21 14:56:54,880 - __main__ - INFO - 🔄 Starting complete legal research workflow...
+2025-07-21 14:56:54,881 - __main__ - INFO - 📰 Step 1: Web scraping legal news sources...
+2025-07-21 14:56:54,881 - agents.web_scraper - ERROR - Failed to scrape source Law360: Unknown source: Law360
+2025-07-21 14:56:54,881 - agents.web_scraper - ERROR - Failed to scrape source Reuters Legal: Unknown source: Reuters Legal
+2025-07-21 14:56:54,881 - agents.web_scraper - ERROR - Failed to scrape source Bloomberg Law: Unknown source: Bloomberg Law
+2025-07-21 14:56:54,881 - agents.web_scraper - ERROR - Failed to scrape source Legal News Line: Unknown source: Legal News Line
+2025-07-21 14:56:54,881 - __main__ - INFO - ✅ Scraped 0 articles from 0 sources
+2025-07-21 14:56:54,881 - __main__ - WARNING - ⚠️ No articles were successfully scraped
+2025-07-21 14:56:54,881 - __main__ - INFO - ⏱️ Workflow completed in 0.0 seconds
+2025-07-21 14:56:54,881 - __main__ - INFO - 🎯 Final Results:
+2025-07-21 14:56:54,881 - __main__ - INFO -   articles_scraped: 0
+2025-07-21 14:56:54,881 - __main__ - INFO -   articles_processed: 0
+2025-07-21 14:56:54,881 - __main__ - INFO -   articles_generated: 0
+2025-07-21 14:56:54,881 - __main__ - INFO -   articles_published: 0
+2025-07-21 14:56:54,881 - __main__ - INFO -   start_time: 2025-07-21 14:56:54.880982
+2025-07-21 14:56:54,881 - __main__ - INFO -   end_time: 2025-07-21 14:56:54.881154
+2025-07-21 14:56:54,881 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-21 14:56:54,881 - __main__ - INFO - ✅ Database connections closed
+2025-07-21 14:56:54,881 - __main__ - INFO - ✅ System shutdown completed
+2025-07-21 14:58:11,589 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-21 14:58:11,626 - agents.database - INFO - Database agent initialized successfully
+2025-07-21 14:58:11,626 - __main__ - INFO - ✅ Database agent initialized
+2025-07-21 14:58:11,626 - __main__ - INFO - ✅ System configuration verified
+2025-07-21 14:58:11,626 - __main__ - INFO - ⚠️ Skipping LLM connectivity test
+2025-07-21 14:58:11,626 - __main__ - INFO - 🎉 System initialization completed successfully
+2025-07-21 14:58:11,626 - __main__ - INFO - Running complete workflow
+2025-07-21 14:58:11,626 - __main__ - INFO - 🔄 Starting complete legal research workflow...
+2025-07-21 14:58:11,626 - __main__ - INFO - 📰 Step 1: Web scraping legal news sources...
+2025-07-21 14:58:13,148 - agents.web_scraper - INFO - Discovered 0 article URLs for Law360
+2025-07-21 14:58:13,149 - agents.web_scraper - WARNING - No articles found for source: law360
+2025-07-21 14:58:13,149 - agents.web_scraper - ERROR - Failed to scrape source Law360: 2 validation errors for ScrapingBatch
+urls
+  List should have at least 1 item after validation, not 0 [type=too_short, input_value=[], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/too_short
+total_urls
+  Input should be greater than or equal to 1 [type=greater_than_equal, input_value=0, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.11/v/greater_than_equal
+2025-07-21 14:58:15,261 - agents.web_scraper - INFO - Discovered 2 article URLs for Reuters Legal
+2025-07-21 14:58:18,548 - agents.web_scraper - WARNING - No content found with selector div[data-testid='ArticleBody'] for https://www.reuters.com/sports/
+2025-07-21 14:58:21,440 - agents.web_scraper - WARNING - No content found with selector div[data-testid='ArticleBody'] for https://www.reuters.com/science/
+2025-07-21 14:58:21,441 - agents.web_scraper - INFO - Completed scraping batch 21c31e90-84b4-4c0d-8aef-377c331f939e: 0/2 successful
+2025-07-21 14:58:25,655 - agents.web_scraper - INFO - Discovered 0 article URLs for Bloomberg Law
+2025-07-21 14:58:25,656 - agents.web_scraper - WARNING - No articles found for source: bloomberg_law
+2025-07-21 14:58:25,656 - agents.web_scraper - ERROR - Failed to scrape source Bloomberg Law: 2 validation errors for ScrapingBatch
+urls
+  List should have at least 1 item after validation, not 0 [type=too_short, input_value=[], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/too_short
+total_urls
+  Input should be greater than or equal to 1 [type=greater_than_equal, input_value=0, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.11/v/greater_than_equal
+2025-07-21 14:58:27,981 - agents.web_scraper - INFO - Discovered 0 article URLs for Legal News Line
+2025-07-21 14:58:27,981 - agents.web_scraper - WARNING - No articles found for source: legal_news_line
+2025-07-21 14:58:27,981 - agents.web_scraper - ERROR - Failed to scrape source Legal News Line: 2 validation errors for ScrapingBatch
+urls
+  List should have at least 1 item after validation, not 0 [type=too_short, input_value=[], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/too_short
+total_urls
+  Input should be greater than or equal to 1 [type=greater_than_equal, input_value=0, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.11/v/greater_than_equal
+2025-07-21 14:58:27,981 - __main__ - INFO - ✅ Scraped 0 articles from 1 sources
+2025-07-21 14:58:27,981 - __main__ - WARNING - ⚠️ No articles were successfully scraped
+2025-07-21 14:58:27,981 - __main__ - INFO - ⏱️ Workflow completed in 16.4 seconds
+2025-07-21 14:58:27,981 - __main__ - INFO - 🎯 Final Results:
+2025-07-21 14:58:27,981 - __main__ - INFO -   articles_scraped: 0
+2025-07-21 14:58:27,982 - __main__ - INFO -   articles_processed: 0
+2025-07-21 14:58:27,982 - __main__ - INFO -   articles_generated: 0
+2025-07-21 14:58:27,982 - __main__ - INFO -   articles_published: 0
+2025-07-21 14:58:27,982 - __main__ - INFO -   start_time: 2025-07-21 14:58:11.626557
+2025-07-21 14:58:27,982 - __main__ - INFO -   end_time: 2025-07-21 14:58:27.981950
+2025-07-21 14:58:27,982 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-21 14:58:27,982 - __main__ - INFO - ✅ Database connections closed
+2025-07-21 14:58:27,982 - __main__ - INFO - ✅ System shutdown completed
+2025-07-21 14:59:03,412 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-21 14:59:03,425 - agents.database - INFO - Database agent initialized successfully
+2025-07-21 14:59:03,425 - __main__ - INFO - ✅ Database agent initialized
+2025-07-21 14:59:03,425 - __main__ - INFO - ✅ System configuration verified
+2025-07-21 14:59:03,425 - __main__ - INFO - ⚠️ Skipping LLM connectivity test
+2025-07-21 14:59:03,425 - __main__ - INFO - 🎉 System initialization completed successfully
+2025-07-21 14:59:03,425 - __main__ - INFO - Running scraping-only workflow
+2025-07-21 14:59:03,425 - __main__ - INFO - 🔄 Starting scraping-only workflow...
+2025-07-21 14:59:04,803 - agents.web_scraper - INFO - Discovered 0 article URLs for Law360
+2025-07-21 14:59:04,803 - agents.web_scraper - WARNING - No articles found for source: law360
+2025-07-21 14:59:07,474 - agents.web_scraper - INFO - Discovered 3 article URLs for Reuters Legal
+2025-07-21 14:59:10,372 - agents.web_scraper - WARNING - No content found with selector div[data-testid='ArticleBody'] for https://www.reuters.com/sports/
+2025-07-21 14:59:13,251 - agents.web_scraper - WARNING - No content found with selector div[data-testid='ArticleBody'] for https://www.reuters.com/science/
+2025-07-21 14:59:16,145 - agents.web_scraper - WARNING - No content found with selector div[data-testid='ArticleBody'] for https://www.reuters.com/lifestyle/
+2025-07-21 14:59:16,146 - agents.web_scraper - INFO - Completed scraping batch 73ba77a2-9d9c-404f-9134-74bb8b276657: 0/3 successful
+2025-07-21 14:59:20,148 - agents.web_scraper - INFO - Discovered 0 article URLs for Bloomberg Law
+2025-07-21 14:59:20,148 - agents.web_scraper - WARNING - No articles found for source: bloomberg_law
+2025-07-21 14:59:24,345 - agents.web_scraper - INFO - Discovered 0 article URLs for Legal News Line
+2025-07-21 14:59:24,345 - agents.web_scraper - WARNING - No articles found for source: legal_news_line
+2025-07-21 14:59:26,362 - __main__ - INFO - 🎯 Final Results:
+2025-07-21 14:59:26,362 - __main__ - INFO -   articles_scraped: 0
+2025-07-21 14:59:26,362 - __main__ - INFO -   articles_processed: 0
+2025-07-21 14:59:26,362 - __main__ - INFO -   verification_stats:
+2025-07-21 14:59:26,362 - __main__ - INFO -     total_articles: 0
+2025-07-21 14:59:26,362 - __main__ - INFO -     processed_articles: 0
+2025-07-21 14:59:26,362 - __main__ - INFO -     verification_rate: 0.0
+2025-07-21 14:59:26,362 - __main__ - INFO -     timestamp: 2025-07-21 14:59:26.362511
+2025-07-21 14:59:26,362 - __main__ - INFO -   sources_scraped: 4
+2025-07-21 14:59:26,362 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-21 14:59:26,363 - __main__ - INFO - ✅ Database connections closed
+2025-07-21 14:59:26,363 - __main__ - INFO - ✅ System shutdown completed
+2025-07-21 15:00:37,392 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-21 15:00:37,424 - agents.database - INFO - Database agent initialized successfully
+2025-07-21 15:00:37,425 - __main__ - INFO - ✅ Database agent initialized
+2025-07-21 15:00:37,425 - __main__ - INFO - ✅ System configuration verified
+2025-07-21 15:00:37,425 - __main__ - INFO - ⚠️ Skipping LLM connectivity test
+2025-07-21 15:00:37,425 - __main__ - INFO - 🎉 System initialization completed successfully
+2025-07-21 15:00:37,425 - __main__ - INFO - Running complete workflow
+2025-07-21 15:00:37,425 - __main__ - INFO - 🔄 Starting complete legal research workflow...
+2025-07-21 15:00:37,425 - __main__ - INFO - 📰 Step 1: Web scraping legal news sources...
+2025-07-21 15:00:38,848 - agents.web_scraper - INFO - Discovered 0 article URLs for Law360
+2025-07-21 15:00:38,848 - agents.web_scraper - WARNING - No articles found for source: law360
+2025-07-21 15:00:42,290 - agents.web_scraper - INFO - Discovered 2 article URLs for Reuters Legal
+2025-07-21 15:00:45,613 - agents.web_scraper - WARNING - No content found with selector div[data-testid='ArticleBody'] for https://www.reuters.com/sports/
+2025-07-21 15:00:48,517 - agents.web_scraper - WARNING - No content found with selector div[data-testid='ArticleBody'] for https://www.reuters.com/science/
+2025-07-21 15:00:48,518 - agents.web_scraper - INFO - Completed scraping batch 14a4353a-1214-4a79-9f52-4eb4467a6307: 0/2 successful
+2025-07-21 15:00:52,546 - agents.web_scraper - INFO - Discovered 0 article URLs for Bloomberg Law
+2025-07-21 15:00:52,546 - agents.web_scraper - WARNING - No articles found for source: bloomberg_law
+2025-07-21 15:00:56,717 - agents.web_scraper - INFO - Discovered 0 article URLs for Legal News Line
+2025-07-21 15:00:56,717 - agents.web_scraper - WARNING - No articles found for source: legal_news_line
+2025-07-21 15:00:58,718 - __main__ - INFO - ✅ Scraped 0 articles from 4 sources
+2025-07-21 15:00:58,719 - __main__ - WARNING - ⚠️ No articles were successfully scraped
+2025-07-21 15:00:58,719 - __main__ - INFO - ⏱️ Workflow completed in 21.3 seconds
+2025-07-21 15:00:58,719 - __main__ - INFO - 🎯 Final Results:
+2025-07-21 15:00:58,719 - __main__ - INFO -   articles_scraped: 0
+2025-07-21 15:00:58,719 - __main__ - INFO -   articles_processed: 0
+2025-07-21 15:00:58,719 - __main__ - INFO -   articles_generated: 0
+2025-07-21 15:00:58,719 - __main__ - INFO -   articles_published: 0
+2025-07-21 15:00:58,719 - __main__ - INFO -   start_time: 2025-07-21 15:00:37.425119
+2025-07-21 15:00:58,719 - __main__ - INFO -   end_time: 2025-07-21 15:00:58.719275
+2025-07-21 15:00:58,719 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-21 15:00:58,720 - __main__ - INFO - ✅ Database connections closed
+2025-07-21 15:00:58,720 - __main__ - INFO - ✅ System shutdown completed
+2025-07-21 15:01:17,868 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-21 15:01:17,881 - agents.database - INFO - Database agent initialized successfully
+2025-07-21 15:01:17,881 - __main__ - INFO - ✅ Database agent initialized
+2025-07-21 15:01:17,881 - __main__ - INFO - ✅ System configuration verified
+2025-07-21 15:01:17,881 - __main__ - INFO - ⚠️ Skipping LLM connectivity test
+2025-07-21 15:01:17,881 - __main__ - INFO - 🎉 System initialization completed successfully
+2025-07-21 15:01:17,881 - __main__ - INFO - Running complete workflow
+2025-07-21 15:01:17,881 - __main__ - INFO - 🔄 Starting complete legal research workflow...
+2025-07-21 15:01:17,881 - __main__ - INFO - 📰 Step 1: Web scraping legal news sources...
+2025-07-21 15:01:19,213 - agents.web_scraper - INFO - Discovered 0 article URLs for Law360
+2025-07-21 15:01:19,213 - agents.web_scraper - WARNING - No articles found for source: law360
+2025-07-21 15:01:21,903 - agents.web_scraper - INFO - Discovered 2 article URLs for Reuters Legal
+2025-07-21 15:01:24,793 - agents.web_scraper - WARNING - No content found with selector div[data-testid='ArticleBody'] for https://www.reuters.com/sports/
+2025-07-21 15:01:27,661 - agents.web_scraper - WARNING - No content found with selector div[data-testid='ArticleBody'] for https://www.reuters.com/science/
+2025-07-21 15:01:27,661 - agents.web_scraper - INFO - Completed scraping batch ae22186d-1c69-4b7d-aae7-e505f6b7ee5f: 0/2 successful
+2025-07-21 15:01:31,766 - agents.web_scraper - INFO - Discovered 0 article URLs for Bloomberg Law
+2025-07-21 15:01:31,767 - agents.web_scraper - WARNING - No articles found for source: bloomberg_law
+2025-07-21 15:01:35,961 - agents.web_scraper - INFO - Discovered 0 article URLs for Legal News Line
+2025-07-21 15:01:35,961 - agents.web_scraper - WARNING - No articles found for source: legal_news_line
+2025-07-21 15:01:37,962 - __main__ - INFO - ✅ Scraped 0 articles from 4 sources
+2025-07-21 15:01:37,962 - __main__ - INFO - 🔍 Step 2: Extracting structured data from articles...
+2025-07-21 15:01:37,982 - agents.extractor - WARNING - LLM extraction failed: '\n        "case_names"'
+2025-07-21 15:01:37,982 - agents.extractor - ERROR - Error extracting data from article c06f2262-6ba2-4cbc-8550-70e9aa5442a2: 1 validation error for ExtractedData
+source_url
+  URL scheme should be 'http' or 'https' [type=url_scheme, input_value='stored://article/c06f226...-4cbc-8550-70e9aa5442a2', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/url_scheme
+2025-07-21 15:01:37,982 - agents.extractor - ERROR - Failed to process article c06f2262-6ba2-4cbc-8550-70e9aa5442a2: 1 validation error for ExtractedData
+source_url
+  URL scheme should be 'http' or 'https' [type=url_scheme, input_value='stored://article/c06f226...-4cbc-8550-70e9aa5442a2', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/url_scheme
+2025-07-21 15:01:37,984 - agents.extractor - WARNING - LLM extraction failed: '\n        "case_names"'
+2025-07-21 15:01:37,984 - agents.extractor - ERROR - Error extracting data from article 1c24a07d-a37c-40b1-af12-4a0af1080290: 1 validation error for ExtractedData
+source_url
+  URL scheme should be 'http' or 'https' [type=url_scheme, input_value='stored://article/1c24a07...-40b1-af12-4a0af1080290', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/url_scheme
+2025-07-21 15:01:37,984 - agents.extractor - ERROR - Failed to process article 1c24a07d-a37c-40b1-af12-4a0af1080290: 1 validation error for ExtractedData
+source_url
+  URL scheme should be 'http' or 'https' [type=url_scheme, input_value='stored://article/1c24a07...-40b1-af12-4a0af1080290', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/url_scheme
+2025-07-21 15:01:37,986 - agents.extractor - WARNING - LLM extraction failed: '\n        "case_names"'
+2025-07-21 15:01:37,986 - agents.extractor - ERROR - Error extracting data from article af3c5573-31c5-42ea-908c-3a1546f45f79: 1 validation error for ExtractedData
+source_url
+  URL scheme should be 'http' or 'https' [type=url_scheme, input_value='stored://article/af3c557...-42ea-908c-3a1546f45f79', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/url_scheme
+2025-07-21 15:01:37,986 - agents.extractor - ERROR - Failed to process article af3c5573-31c5-42ea-908c-3a1546f45f79: 1 validation error for ExtractedData
+source_url
+  URL scheme should be 'http' or 'https' [type=url_scheme, input_value='stored://article/af3c557...-42ea-908c-3a1546f45f79', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/url_scheme
+2025-07-21 15:01:37,986 - __main__ - INFO - ✅ Processed 0 articles for data extraction
+2025-07-21 15:01:37,986 - __main__ - WARNING - ⚠️ No articles were successfully processed
+2025-07-21 15:01:37,986 - __main__ - INFO - ⏱️ Workflow completed in 20.1 seconds
+2025-07-21 15:01:37,986 - __main__ - INFO - 🎯 Final Results:
+2025-07-21 15:01:37,986 - __main__ - INFO -   articles_scraped: 0
+2025-07-21 15:01:37,986 - __main__ - INFO -   articles_processed: 0
+2025-07-21 15:01:37,986 - __main__ - INFO -   articles_generated: 0
+2025-07-21 15:01:37,986 - __main__ - INFO -   articles_published: 0
+2025-07-21 15:01:37,986 - __main__ - INFO -   start_time: 2025-07-21 15:01:17.881705
+2025-07-21 15:01:37,986 - __main__ - INFO -   end_time: 2025-07-21 15:01:37.986345
+2025-07-21 15:01:37,986 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-21 15:01:37,986 - __main__ - INFO - ✅ Database connections closed
+2025-07-21 15:01:37,986 - __main__ - INFO - ✅ System shutdown completed
+2025-07-21 16:14:51,036 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-21 16:14:51,050 - agents.database - INFO - Database agent initialized successfully
+2025-07-21 16:14:51,050 - __main__ - INFO - ✅ Database agent initialized
+2025-07-21 16:14:51,050 - __main__ - INFO - ✅ System configuration verified
+2025-07-21 16:14:55,620 - tools.llm_client - INFO - LLM call successful: 15 tokens, $0.0000, 4.57s
+2025-07-21 16:14:55,620 - __main__ - INFO - ✅ LLM connectivity verified
+2025-07-21 16:14:55,620 - __main__ - INFO - 🎉 System initialization completed successfully
+2025-07-21 16:14:55,620 - __main__ - INFO - Running scraping-only workflow
+2025-07-21 16:14:55,620 - __main__ - INFO - 🔄 Starting scraping-only workflow...
+2025-07-21 16:14:57,150 - agents.web_scraper - INFO - Discovered 0 article URLs for Law.com
+2025-07-21 16:14:57,151 - agents.web_scraper - WARNING - No articles found for source: law_com
+2025-07-21 16:15:01,357 - agents.web_scraper - INFO - Discovered 3 article URLs for Legal Reader
+2025-07-21 16:15:05,118 - agents.web_scraper - WARNING - No content found with selector .entry-content, .post-content for https://www.legalreader.com/trump-murdoch-news-corporation-wsj-epstein-letter-lawsuit/
+2025-07-21 16:15:08,806 - agents.web_scraper - WARNING - No content found with selector .entry-content, .post-content for https://www.legalreader.com/colorado-school-district-lgbt-nondiscrimination-policy-lawsuit/
+2025-07-21 16:15:12,511 - agents.web_scraper - WARNING - No content found with selector .entry-content, .post-content for https://www.legalreader.com/texas-lawsuit-paxton-us-masters-swimming-transgender-athletes/
+2025-07-21 16:15:12,513 - agents.web_scraper - INFO - Completed scraping batch 0e93d636-3c13-497a-9e80-c6d7932b8f8e: 0/3 successful
+2025-07-21 16:15:15,497 - agents.web_scraper - INFO - Discovered 3 article URLs for Above the Law
+2025-07-21 16:15:18,942 - agents.web_scraper - WARNING - No content found with selector .entry-content, .post-content for https://abovethelaw.com/2025/07/summer-associates-naughty-toddler-impression-gets-her-bounced-from-biglaw/
+2025-07-21 16:15:22,261 - agents.web_scraper - WARNING - No content found with selector .entry-content, .post-content for https://abovethelaw.com/2025/07/alina-habba-to-let-the-screen-door-hit-her-on-her-way-out-of-u-s-attorney-job-or-maybe-not-2/
+2025-07-21 16:15:25,659 - agents.web_scraper - WARNING - No content found with selector .entry-content, .post-content for https://abovethelaw.com/2025/07/if-you-want-to-see-a-really-evil-judge-in-action/
+2025-07-21 16:15:25,659 - agents.web_scraper - INFO - Completed scraping batch 0bb5e5e8-c1fe-4a2f-b63e-51ce52680caa: 0/3 successful
+2025-07-21 16:15:29,044 - agents.web_scraper - INFO - Discovered 0 article URLs for Law360 Public
+2025-07-21 16:15:29,045 - agents.web_scraper - WARNING - No articles found for source: law360_backup
+2025-07-21 16:15:31,067 - __main__ - INFO - 🎯 Final Results:
+2025-07-21 16:15:31,067 - __main__ - INFO -   articles_scraped: 0
+2025-07-21 16:15:31,067 - __main__ - INFO -   articles_processed: 0
+2025-07-21 16:15:31,067 - __main__ - INFO -   verification_stats:
+2025-07-21 16:15:31,067 - __main__ - INFO -     total_articles: 3
+2025-07-21 16:15:31,067 - __main__ - INFO -     processed_articles: 0
+2025-07-21 16:15:31,068 - __main__ - INFO -     verification_rate: 0.0
+2025-07-21 16:15:31,068 - __main__ - INFO -     timestamp: 2025-07-21 16:15:31.067623
+2025-07-21 16:15:31,068 - __main__ - INFO -   sources_scraped: 4
+2025-07-21 16:15:31,068 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-21 16:15:31,068 - __main__ - INFO - ✅ Database connections closed
+2025-07-21 16:15:31,068 - __main__ - INFO - ✅ System shutdown completed
+2025-07-21 16:15:49,279 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-21 16:15:49,311 - agents.database - INFO - Database agent initialized successfully
+2025-07-21 16:15:49,311 - __main__ - INFO - ✅ Database agent initialized
+2025-07-21 16:15:49,311 - __main__ - INFO - ✅ System configuration verified
+2025-07-21 16:15:54,652 - tools.llm_client - INFO - LLM call successful: 15 tokens, $0.0000, 5.34s
+2025-07-21 16:15:54,652 - __main__ - INFO - ✅ LLM connectivity verified
+2025-07-21 16:15:54,653 - __main__ - INFO - 🎉 System initialization completed successfully
+2025-07-21 16:15:54,653 - __main__ - INFO - Running scraping-only workflow
+2025-07-21 16:15:54,653 - __main__ - INFO - 🔄 Starting scraping-only workflow...
+2025-07-21 16:15:56,179 - agents.web_scraper - INFO - Discovered 0 article URLs for Law.com
+2025-07-21 16:15:56,180 - agents.web_scraper - WARNING - No articles found for source: law_com
+2025-07-21 16:16:00,221 - agents.web_scraper - INFO - Discovered 3 article URLs for Legal Reader
+2025-07-21 16:16:07,769 - agents.web_scraper - INFO - Content filtered out for https://www.legalreader.com/colorado-school-district-lgbt-nondiscrimination-policy-lawsuit/
+2025-07-21 16:16:12,605 - agents.web_scraper - INFO - Content filtered out for https://www.legalreader.com/texas-lawsuit-paxton-us-masters-swimming-transgender-athletes/
+2025-07-21 16:16:12,605 - agents.web_scraper - INFO - Completed scraping batch 3a357d84-79c2-4b90-ab49-260f62261a7f: 0/3 successful
+2025-07-21 16:16:15,301 - agents.web_scraper - INFO - Discovered 3 article URLs for Above the Law
+2025-07-21 16:16:18,493 - agents.web_scraper - INFO - Content filtered out for https://abovethelaw.com/2025/07/summer-associates-naughty-toddler-impression-gets-her-bounced-from-biglaw/
+2025-07-21 16:16:21,654 - agents.web_scraper - INFO - Content filtered out for https://abovethelaw.com/2025/07/alina-habba-to-let-the-screen-door-hit-her-on-her-way-out-of-u-s-attorney-job-or-maybe-not-2/
+2025-07-21 16:16:24,830 - agents.web_scraper - INFO - Content filtered out for https://abovethelaw.com/2025/07/if-you-want-to-see-a-really-evil-judge-in-action/
+2025-07-21 16:16:24,830 - agents.web_scraper - INFO - Completed scraping batch 31096309-b1ef-47a9-8629-b7ec4a175b91: 0/3 successful
+2025-07-21 16:16:28,170 - agents.web_scraper - INFO - Discovered 0 article URLs for Law360 Public
+2025-07-21 16:16:28,170 - agents.web_scraper - WARNING - No articles found for source: law360_backup
+2025-07-21 16:16:30,194 - __main__ - INFO - 🎯 Final Results:
+2025-07-21 16:16:30,194 - __main__ - INFO -   articles_scraped: 0
+2025-07-21 16:16:30,194 - __main__ - INFO -   articles_processed: 0
+2025-07-21 16:16:30,194 - __main__ - INFO -   verification_stats:
+2025-07-21 16:16:30,194 - __main__ - INFO -     total_articles: 3
+2025-07-21 16:16:30,194 - __main__ - INFO -     processed_articles: 0
+2025-07-21 16:16:30,194 - __main__ - INFO -     verification_rate: 0.0
+2025-07-21 16:16:30,194 - __main__ - INFO -     timestamp: 2025-07-21 16:16:30.194522
+2025-07-21 16:16:30,195 - __main__ - INFO -   sources_scraped: 4
+2025-07-21 16:16:30,195 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-21 16:16:30,195 - __main__ - INFO - ✅ Database connections closed
+2025-07-21 16:16:30,195 - __main__ - INFO - ✅ System shutdown completed
+2025-07-21 16:16:54,744 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-21 16:16:54,778 - agents.database - INFO - Database agent initialized successfully
+2025-07-21 16:16:54,778 - __main__ - INFO - ✅ Database agent initialized
+2025-07-21 16:16:54,778 - __main__ - INFO - ✅ System configuration verified
+2025-07-21 16:16:58,819 - tools.llm_client - INFO - LLM call successful: 15 tokens, $0.0000, 4.04s
+2025-07-21 16:16:58,819 - __main__ - INFO - ✅ LLM connectivity verified
+2025-07-21 16:16:58,820 - __main__ - INFO - 🎉 System initialization completed successfully
+2025-07-21 16:16:58,820 - __main__ - INFO - Running scraping-only workflow
+2025-07-21 16:16:58,820 - __main__ - INFO - 🔄 Starting scraping-only workflow...
+2025-07-21 16:17:00,602 - agents.web_scraper - INFO - Discovered 0 article URLs for Law.com
+2025-07-21 16:17:00,602 - agents.web_scraper - WARNING - No articles found for source: law_com
+2025-07-21 16:17:07,372 - agents.web_scraper - INFO - Discovered 3 article URLs for Legal Reader
+2025-07-21 16:17:15,090 - agents.web_scraper - INFO - Content filtered out for https://www.legalreader.com/colorado-school-district-lgbt-nondiscrimination-policy-lawsuit/
+2025-07-21 16:17:18,767 - agents.web_scraper - INFO - Content filtered out for https://www.legalreader.com/texas-lawsuit-paxton-us-masters-swimming-transgender-athletes/
+2025-07-21 16:17:18,768 - agents.web_scraper - INFO - Completed scraping batch ab8d289d-0755-4a80-a7e3-fea43669049d: 0/3 successful
+2025-07-21 16:17:21,798 - agents.web_scraper - INFO - Discovered 3 article URLs for Above the Law
+2025-07-21 16:17:25,157 - agents.web_scraper - INFO - Content filtered out for https://abovethelaw.com/2025/07/summer-associates-naughty-toddler-impression-gets-her-bounced-from-biglaw/
+2025-07-21 16:17:28,465 - agents.web_scraper - INFO - Content filtered out for https://abovethelaw.com/2025/07/alina-habba-to-let-the-screen-door-hit-her-on-her-way-out-of-u-s-attorney-job-or-maybe-not-2/
+2025-07-21 16:17:31,892 - agents.web_scraper - INFO - Completed scraping batch cf4bdda3-f1a0-49d6-b809-96de4ec4bcb4: 0/3 successful
+2025-07-21 16:17:35,245 - agents.web_scraper - INFO - Discovered 0 article URLs for Law360 Public
+2025-07-21 16:17:35,246 - agents.web_scraper - WARNING - No articles found for source: law360_backup
+2025-07-21 16:17:37,279 - __main__ - INFO - 🎯 Final Results:
+2025-07-21 16:17:37,279 - __main__ - INFO -   articles_scraped: 0
+2025-07-21 16:17:37,279 - __main__ - INFO -   articles_processed: 0
+2025-07-21 16:17:37,279 - __main__ - INFO -   verification_stats:
+2025-07-21 16:17:37,279 - __main__ - INFO -     total_articles: 3
+2025-07-21 16:17:37,279 - __main__ - INFO -     processed_articles: 0
+2025-07-21 16:17:37,279 - __main__ - INFO -     verification_rate: 0.0
+2025-07-21 16:17:37,279 - __main__ - INFO -     timestamp: 2025-07-21 16:17:37.279174
+2025-07-21 16:17:37,279 - __main__ - INFO -   sources_scraped: 4
+2025-07-21 16:17:37,279 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-21 16:17:37,280 - __main__ - INFO - ✅ Database connections closed
+2025-07-21 16:17:37,280 - __main__ - INFO - ✅ System shutdown completed
+2025-07-21 16:17:57,264 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-21 16:17:57,276 - agents.database - INFO - Database agent initialized successfully
+2025-07-21 16:17:57,276 - __main__ - INFO - ✅ Database agent initialized
+2025-07-21 16:17:57,276 - __main__ - INFO - ✅ System configuration verified
+2025-07-21 16:18:01,835 - tools.llm_client - INFO - LLM call successful: 15 tokens, $0.0000, 4.56s
+2025-07-21 16:18:01,836 - __main__ - INFO - ✅ LLM connectivity verified
+2025-07-21 16:18:01,836 - __main__ - INFO - 🎉 System initialization completed successfully
+2025-07-21 16:18:01,836 - __main__ - INFO - Running scraping-only workflow
+2025-07-21 16:18:01,836 - __main__ - INFO - 🔄 Starting scraping-only workflow...
+2025-07-21 16:18:03,407 - agents.web_scraper - INFO - Discovered 0 article URLs for Law.com
+2025-07-21 16:18:03,408 - agents.web_scraper - WARNING - No articles found for source: law_com
+2025-07-21 16:18:07,406 - agents.web_scraper - INFO - Discovered 3 article URLs for Legal Reader
+2025-07-21 16:18:18,637 - agents.web_scraper - INFO - Completed scraping batch a9a84ba7-97a1-427c-8684-07fdd69351c1: 0/3 successful
+2025-07-21 16:18:21,330 - agents.web_scraper - INFO - Discovered 3 article URLs for Above the Law
+2025-07-21 16:18:30,991 - agents.web_scraper - INFO - Completed scraping batch fe4821e3-e96f-497a-819e-b742d40cc88e: 0/3 successful
+2025-07-21 16:18:34,394 - agents.web_scraper - INFO - Discovered 0 article URLs for Law360 Public
+2025-07-21 16:18:34,395 - agents.web_scraper - WARNING - No articles found for source: law360_backup
+2025-07-21 16:18:36,421 - __main__ - INFO - 🎯 Final Results:
+2025-07-21 16:18:36,421 - __main__ - INFO -   articles_scraped: 0
+2025-07-21 16:18:36,421 - __main__ - INFO -   articles_processed: 0
+2025-07-21 16:18:36,421 - __main__ - INFO -   verification_stats:
+2025-07-21 16:18:36,421 - __main__ - INFO -     total_articles: 3
+2025-07-21 16:18:36,421 - __main__ - INFO -     processed_articles: 0
+2025-07-21 16:18:36,421 - __main__ - INFO -     verification_rate: 0.0
+2025-07-21 16:18:36,422 - __main__ - INFO -     timestamp: 2025-07-21 16:18:36.421572
+2025-07-21 16:18:36,422 - __main__ - INFO -   sources_scraped: 4
+2025-07-21 16:18:36,422 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-21 16:18:36,422 - __main__ - INFO - ✅ Database connections closed
+2025-07-21 16:18:36,422 - __main__ - INFO - ✅ System shutdown completed
+2025-07-21 16:20:14,716 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-21 16:20:14,749 - agents.database - INFO - Database agent initialized successfully
+2025-07-21 16:20:14,749 - __main__ - INFO - ✅ Database agent initialized
+2025-07-21 16:20:14,749 - __main__ - INFO - ✅ System configuration verified
+2025-07-21 16:20:19,544 - tools.llm_client - INFO - LLM call successful: 15 tokens, $0.0000, 4.79s
+2025-07-21 16:20:19,544 - __main__ - INFO - ✅ LLM connectivity verified
+2025-07-21 16:20:19,544 - __main__ - INFO - 🎉 System initialization completed successfully
+2025-07-21 16:20:19,544 - __main__ - INFO - Running complete workflow
+2025-07-21 16:20:19,544 - __main__ - INFO - 🔄 Starting complete legal research workflow...
+2025-07-21 16:20:19,544 - __main__ - INFO - 📰 Step 1: Web scraping legal news sources...
+2025-07-21 16:20:21,336 - agents.web_scraper - INFO - Discovered 0 article URLs for Law.com
+2025-07-21 16:20:21,336 - agents.web_scraper - WARNING - No articles found for source: law_com
+2025-07-21 16:20:25,686 - agents.web_scraper - INFO - Discovered 2 article URLs for Legal Reader
+2025-07-21 16:20:33,089 - agents.web_scraper - INFO - Completed scraping batch aadbd1b3-6bfd-4cbe-8e5e-b81fa2609646: 0/2 successful
+2025-07-21 16:20:35,774 - agents.web_scraper - INFO - Discovered 2 article URLs for Above the Law
+2025-07-21 16:20:42,570 - agents.web_scraper - INFO - Completed scraping batch 5f7c15c2-2086-4b90-a023-2981b03a01a2: 0/2 successful
+2025-07-21 16:20:45,965 - agents.web_scraper - INFO - Discovered 0 article URLs for Law360 Public
+2025-07-21 16:20:45,965 - agents.web_scraper - WARNING - No articles found for source: law360_backup
+2025-07-21 16:20:47,967 - __main__ - INFO - ✅ Scraped 0 articles from 4 sources
+2025-07-21 16:20:47,967 - __main__ - INFO - 🔍 Step 2: Extracting structured data from articles...
+2025-07-21 16:20:47,988 - agents.extractor - WARNING - LLM extraction failed: '\n        "case_names"'
+2025-07-21 16:20:47,988 - agents.extractor - ERROR - Error extracting data from article c06f2262-6ba2-4cbc-8550-70e9aa5442a2: 1 validation error for ExtractedData
+source_url
+  URL scheme should be 'http' or 'https' [type=url_scheme, input_value='stored://article/c06f226...-4cbc-8550-70e9aa5442a2', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/url_scheme
+2025-07-21 16:20:47,988 - agents.extractor - ERROR - Failed to process article c06f2262-6ba2-4cbc-8550-70e9aa5442a2: 1 validation error for ExtractedData
+source_url
+  URL scheme should be 'http' or 'https' [type=url_scheme, input_value='stored://article/c06f226...-4cbc-8550-70e9aa5442a2', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/url_scheme
+2025-07-21 16:20:47,990 - agents.extractor - WARNING - LLM extraction failed: '\n        "case_names"'
+2025-07-21 16:20:47,991 - agents.extractor - ERROR - Error extracting data from article 1c24a07d-a37c-40b1-af12-4a0af1080290: 1 validation error for ExtractedData
+source_url
+  URL scheme should be 'http' or 'https' [type=url_scheme, input_value='stored://article/1c24a07...-40b1-af12-4a0af1080290', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/url_scheme
+2025-07-21 16:20:47,991 - agents.extractor - ERROR - Failed to process article 1c24a07d-a37c-40b1-af12-4a0af1080290: 1 validation error for ExtractedData
+source_url
+  URL scheme should be 'http' or 'https' [type=url_scheme, input_value='stored://article/1c24a07...-40b1-af12-4a0af1080290', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/url_scheme
+2025-07-21 16:20:47,992 - agents.extractor - WARNING - LLM extraction failed: '\n        "case_names"'
+2025-07-21 16:20:47,992 - agents.extractor - ERROR - Error extracting data from article af3c5573-31c5-42ea-908c-3a1546f45f79: 1 validation error for ExtractedData
+source_url
+  URL scheme should be 'http' or 'https' [type=url_scheme, input_value='stored://article/af3c557...-42ea-908c-3a1546f45f79', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/url_scheme
+2025-07-21 16:20:47,993 - agents.extractor - ERROR - Failed to process article af3c5573-31c5-42ea-908c-3a1546f45f79: 1 validation error for ExtractedData
+source_url
+  URL scheme should be 'http' or 'https' [type=url_scheme, input_value='stored://article/af3c557...-42ea-908c-3a1546f45f79', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/url_scheme
+2025-07-21 16:20:47,993 - __main__ - INFO - ✅ Processed 0 articles for data extraction
+2025-07-21 16:20:47,993 - __main__ - WARNING - ⚠️ No articles were successfully processed
+2025-07-21 16:20:47,993 - __main__ - INFO - ⏱️ Workflow completed in 28.4 seconds
+2025-07-21 16:20:47,993 - __main__ - INFO - 🎯 Final Results:
+2025-07-21 16:20:47,993 - __main__ - INFO -   articles_scraped: 0
+2025-07-21 16:20:47,993 - __main__ - INFO -   articles_processed: 0
+2025-07-21 16:20:47,993 - __main__ - INFO -   articles_generated: 0
+2025-07-21 16:20:47,993 - __main__ - INFO -   articles_published: 0
+2025-07-21 16:20:47,993 - __main__ - INFO -   start_time: 2025-07-21 16:20:19.544324
+2025-07-21 16:20:47,993 - __main__ - INFO -   end_time: 2025-07-21 16:20:47.993091
+2025-07-21 16:20:47,993 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-21 16:20:47,993 - __main__ - INFO - ✅ Database connections closed
+2025-07-21 16:20:47,993 - __main__ - INFO - ✅ System shutdown completed
+2025-07-21 16:28:36,832 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-21 16:28:36,869 - agents.database - INFO - Database agent initialized successfully
+2025-07-21 16:28:36,869 - __main__ - INFO - ✅ Database agent initialized
+2025-07-21 16:28:36,869 - __main__ - INFO - ✅ System configuration verified
+2025-07-21 16:28:41,313 - tools.llm_client - INFO - LLM call successful: 15 tokens, $0.0000, 4.44s
+2025-07-21 16:28:41,314 - __main__ - INFO - ✅ LLM connectivity verified
+2025-07-21 16:28:41,314 - __main__ - INFO - 🎉 System initialization completed successfully
+2025-07-21 16:28:41,314 - __main__ - INFO - Running complete workflow
+2025-07-21 16:28:41,314 - __main__ - INFO - 🔄 Starting complete legal research workflow...
+2025-07-21 16:28:41,314 - __main__ - INFO - 📰 Step 1: Web scraping legal news sources...
+2025-07-21 16:28:43,224 - agents.web_scraper - INFO - Discovered 0 article URLs for Law.com
+2025-07-21 16:28:43,224 - agents.web_scraper - WARNING - No articles found for source: law_com
+2025-07-21 16:28:47,278 - agents.web_scraper - INFO - Discovered 2 article URLs for Legal Reader
+2025-07-21 16:28:54,841 - agents.web_scraper - INFO - Completed scraping batch 2679b2de-5558-4af1-82d0-3c70f21dfde3: 0/2 successful
+2025-07-21 16:28:57,571 - agents.web_scraper - INFO - Discovered 2 article URLs for Above the Law
+2025-07-21 16:29:04,257 - agents.web_scraper - INFO - Completed scraping batch 04e478f2-165a-432b-99c3-bd80efcfc86d: 0/2 successful
+2025-07-21 16:29:07,668 - agents.web_scraper - INFO - Discovered 0 article URLs for Law360 Public
+2025-07-21 16:29:07,669 - agents.web_scraper - WARNING - No articles found for source: law360_backup
+2025-07-21 16:29:09,670 - __main__ - INFO - ✅ Scraped 0 articles from 4 sources
+2025-07-21 16:29:09,670 - __main__ - INFO - 🔍 Step 2: Extracting structured data from articles...
+2025-07-21 16:29:09,688 - agents.extractor - WARNING - LLM extraction failed: '\n        "case_names"'
+2025-07-21 16:29:09,688 - agents.extractor - ERROR - Error extracting data from article c06f2262-6ba2-4cbc-8550-70e9aa5442a2: 1 validation error for ExtractedData
+source_url
+  URL scheme should be 'http' or 'https' [type=url_scheme, input_value='stored://article/c06f226...-4cbc-8550-70e9aa5442a2', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/url_scheme
+2025-07-21 16:29:09,688 - agents.extractor - ERROR - Failed to process article c06f2262-6ba2-4cbc-8550-70e9aa5442a2: 1 validation error for ExtractedData
+source_url
+  URL scheme should be 'http' or 'https' [type=url_scheme, input_value='stored://article/c06f226...-4cbc-8550-70e9aa5442a2', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/url_scheme
+2025-07-21 16:29:09,690 - agents.extractor - WARNING - LLM extraction failed: '\n        "case_names"'
+2025-07-21 16:29:09,690 - agents.extractor - ERROR - Error extracting data from article 1c24a07d-a37c-40b1-af12-4a0af1080290: 1 validation error for ExtractedData
+source_url
+  URL scheme should be 'http' or 'https' [type=url_scheme, input_value='stored://article/1c24a07...-40b1-af12-4a0af1080290', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/url_scheme
+2025-07-21 16:29:09,690 - agents.extractor - ERROR - Failed to process article 1c24a07d-a37c-40b1-af12-4a0af1080290: 1 validation error for ExtractedData
+source_url
+  URL scheme should be 'http' or 'https' [type=url_scheme, input_value='stored://article/1c24a07...-40b1-af12-4a0af1080290', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/url_scheme
+2025-07-21 16:29:09,692 - agents.extractor - WARNING - LLM extraction failed: '\n        "case_names"'
+2025-07-21 16:29:09,692 - agents.extractor - ERROR - Error extracting data from article af3c5573-31c5-42ea-908c-3a1546f45f79: 1 validation error for ExtractedData
+source_url
+  URL scheme should be 'http' or 'https' [type=url_scheme, input_value='stored://article/af3c557...-42ea-908c-3a1546f45f79', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/url_scheme
+2025-07-21 16:29:09,692 - agents.extractor - ERROR - Failed to process article af3c5573-31c5-42ea-908c-3a1546f45f79: 1 validation error for ExtractedData
+source_url
+  URL scheme should be 'http' or 'https' [type=url_scheme, input_value='stored://article/af3c557...-42ea-908c-3a1546f45f79', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/url_scheme
+2025-07-21 16:29:09,693 - __main__ - INFO - ✅ Processed 0 articles for data extraction
+2025-07-21 16:29:09,693 - __main__ - WARNING - ⚠️ No articles were successfully processed
+2025-07-21 16:29:09,693 - __main__ - INFO - ⏱️ Workflow completed in 28.4 seconds
+2025-07-21 16:29:09,693 - __main__ - INFO - 🎯 Final Results:
+2025-07-21 16:29:09,693 - __main__ - INFO -   articles_scraped: 0
+2025-07-21 16:29:09,693 - __main__ - INFO -   articles_processed: 0
+2025-07-21 16:29:09,693 - __main__ - INFO -   articles_generated: 0
+2025-07-21 16:29:09,693 - __main__ - INFO -   articles_published: 0
+2025-07-21 16:29:09,693 - __main__ - INFO -   start_time: 2025-07-21 16:28:41.314462
+2025-07-21 16:29:09,693 - __main__ - INFO -   end_time: 2025-07-21 16:29:09.693054
+2025-07-21 16:29:09,693 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-21 16:29:09,693 - __main__ - INFO - ✅ Database connections closed
+2025-07-21 16:29:09,693 - __main__ - INFO - ✅ System shutdown completed

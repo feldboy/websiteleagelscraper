@@ -1,6 +1,7 @@
 """
 Pytest configuration and shared fixtures for the legal research system tests.
 """
+
 import asyncio
 import pytest
 import tempfile
@@ -36,7 +37,7 @@ def mock_settings():
         telegram_channel_id="test-channel",
         respect_robots_txt=False,  # Disable for testing
         rate_limit_delay=0.1,
-        max_retries=1
+        max_retries=1,
     )
 
 
@@ -45,12 +46,12 @@ async def mock_database():
     """Mock database for testing."""
     # Use in-memory SQLite for tests
     original_url = database_agent.engine
-    
+
     # Initialize test database
     await database_agent.initialize()
-    
+
     yield database_agent
-    
+
     # Cleanup
     if database_agent.engine:
         await database_agent.close()
@@ -82,7 +83,7 @@ def sample_scraped_data() -> ScrapedData:
         status_code=200,
         headers={"Content-Type": "text/html"},
         user_agent="Test-Agent",
-        response_time=1.5
+        response_time=1.5,
     )
 
 
@@ -96,20 +97,18 @@ def sample_extracted_data() -> ExtractedData:
             LegalEntity(
                 name="Chief Justice Roberts",
                 entity_type=EntityType.JUDGE,
-                relevance_score=0.9
+                relevance_score=0.9,
             ),
             LegalEntity(
-                name="Supreme Court",
-                entity_type=EntityType.COURT,
-                relevance_score=0.95
-            )
+                name="Supreme Court", entity_type=EntityType.COURT, relevance_score=0.95
+            ),
         ],
         legal_topics=["constitutional_law", "civil_rights"],
         key_quotes=[
             "The lower court's decision was inconsistent with established precedent"
         ],
         extraction_confidence=0.85,
-        completeness_score=0.8
+        completeness_score=0.8,
     )
 
 
@@ -122,11 +121,11 @@ def sample_article_summary() -> ArticleSummary:
         key_points=[
             "Supreme Court ruled in Smith v. Jones",
             "Clarified federal jurisdiction in civil rights",
-            "Chief Justice Roberts wrote majority opinion"
+            "Chief Justice Roberts wrote majority opinion",
         ],
         legal_significance="This ruling provides important clarity on constitutional questions and will affect legal proceedings nationwide.",
         urgency_level="high",
-        impact_scope="national"
+        impact_scope="national",
     )
 
 
@@ -166,9 +165,14 @@ def sample_generated_article() -> GeneratedArticle:
         American jurisprudence.
         """,
         summary="Supreme Court ruling in Smith v. Jones clarifies federal jurisdiction in civil rights cases, providing important precedent for future litigation.",
-        tags=["supreme court", "civil rights", "federal jurisdiction", "constitutional law"],
+        tags=[
+            "supreme court",
+            "civil rights",
+            "federal jurisdiction",
+            "constitutional law",
+        ],
         quality_score=0.85,
-        originality_score=0.92
+        originality_score=0.92,
     )
 
 
@@ -180,7 +184,7 @@ def mock_llm_response():
         "content": "Test LLM response content",
         "tokens_used": 100,
         "cost_estimate": 0.01,
-        "response_time": 1.5
+        "response_time": 1.5,
     }
 
 
@@ -202,7 +206,7 @@ def mock_web_response():
         </html>
         """,
         "headers": {"Content-Type": "text/html"},
-        "url": "https://example.com/legal-article"
+        "url": "https://example.com/legal-article",
     }
 
 
@@ -215,20 +219,20 @@ def mock_telegram_response():
             "message_id": 123,
             "chat": {"id": "test-channel", "type": "channel"},
             "date": 1642694400,
-            "text": "Test message content"
-        }
+            "text": "Test message content",
+        },
     }
 
 
 class AsyncContextManagerMock:
     """Mock async context manager for testing."""
-    
+
     def __init__(self, return_value):
         self.return_value = return_value
-    
+
     async def __aenter__(self):
         return self.return_value
-    
+
     async def __aexit__(self, *args):
         pass
 
@@ -240,22 +244,22 @@ def mock_aiohttp_session():
     mock_response.status = 200
     mock_response.json = AsyncMock(return_value={"ok": True, "result": {}})
     mock_response.text = AsyncMock(return_value="Test response")
-    
+
     mock_session = MagicMock()
     mock_session.get = MagicMock(return_value=AsyncContextManagerMock(mock_response))
     mock_session.post = MagicMock(return_value=AsyncContextManagerMock(mock_response))
-    
+
     return mock_session
 
 
 @pytest.fixture
 def temp_log_file():
     """Create temporary log file for testing."""
-    with tempfile.NamedTemporaryFile(mode='w', suffix='.log', delete=False) as f:
+    with tempfile.NamedTemporaryFile(mode="w", suffix=".log", delete=False) as f:
         log_file = f.name
-    
+
     yield log_file
-    
+
     # Cleanup
     try:
         os.unlink(log_file)
@@ -267,52 +271,49 @@ def temp_log_file():
 def mock_system_metrics():
     """Mock system metrics for testing."""
     return {
-        'memory': {
-            'total_gb': 16.0,
-            'available_gb': 8.0,
-            'used_gb': 8.0,
-            'percent': 50.0
+        "memory": {
+            "total_gb": 16.0,
+            "available_gb": 8.0,
+            "used_gb": 8.0,
+            "percent": 50.0,
         },
-        'cpu': {
-            'percent': 25.0,
-            'count': 8
+        "cpu": {"percent": 25.0, "count": 8},
+        "disk": {
+            "total_gb": 500.0,
+            "free_gb": 400.0,
+            "used_gb": 100.0,
+            "percent": 20.0,
         },
-        'disk': {
-            'total_gb': 500.0,
-            'free_gb': 400.0,
-            'used_gb': 100.0,
-            'percent': 20.0
-        }
     }
 
 
 # Test data generators
-def create_test_article(title: str = "Test Article", content_length: int = 100) -> Dict[str, Any]:
+def create_test_article(
+    title: str = "Test Article", content_length: int = 100
+) -> Dict[str, Any]:
     """Create test article data."""
     content = " ".join(["Test content"] * content_length)
     return {
-        'id': 'test-id-123',
-        'title': title,
-        'content': content,
-        'source_name': 'Test Source',
-        'scraped_at': datetime.now(),
-        'url': 'https://example.com/test'
+        "id": "test-id-123",
+        "title": title,
+        "content": content,
+        "source_name": "Test Source",
+        "scraped_at": datetime.now(),
+        "url": "https://example.com/test",
     }
 
 
 def create_test_extraction(article_id: str = "test-123") -> Dict[str, Any]:
     """Create test extraction data."""
     return {
-        'id': f'extraction-{article_id}',
-        'article_id': article_id,
-        'entities': [
-            {'name': 'Test Court', 'type': 'court', 'relevance_score': 0.8}
-        ],
-        'legal_topics': ['litigation'],
-        'cases': [],
-        'dates': [],
-        'monetary_amounts': [],
-        'key_quotes': ['Test quote from article'],
-        'extraction_confidence': 0.8,
-        'completeness_score': 0.7
+        "id": f"extraction-{article_id}",
+        "article_id": article_id,
+        "entities": [{"name": "Test Court", "type": "court", "relevance_score": 0.8}],
+        "legal_topics": ["litigation"],
+        "cases": [],
+        "dates": [],
+        "monetary_amounts": [],
+        "key_quotes": ["Test quote from article"],
+        "extraction_confidence": 0.8,
+        "completeness_score": 0.7,
     }

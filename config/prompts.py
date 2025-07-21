@@ -3,9 +3,10 @@ LLM prompts for content generation in the legal research system.
 Includes system prompts for different agents and content generation tasks.
 """
 
+
 class LegalPrompts:
     """Collection of prompts for legal content generation and analysis."""
-    
+
     EXTRACTION_PROMPT = """
     You are a legal data extraction specialist. Analyze the provided legal article and extract structured information.
     
@@ -41,7 +42,7 @@ class LegalPrompts:
     Article to analyze:
     {article_content}
     """
-    
+
     SUMMARIZATION_PROMPT = """
     You are a legal content summarizer. Create a concise, professional summary of the provided legal article.
     
@@ -62,7 +63,7 @@ class LegalPrompts:
     
     Summary:
     """
-    
+
     CONNECTION_ANALYSIS_PROMPT = """
     You are a legal trend analyst. Analyze multiple legal articles to identify connections, patterns, and emerging trends.
     
@@ -89,7 +90,7 @@ class LegalPrompts:
         "trend_strength": "weak|moderate|strong"
     }
     """
-    
+
     ARTICLE_GENERATION_PROMPT = """
     You are a professional legal content writer specializing in accessible legal journalism.
     
@@ -117,7 +118,7 @@ class LegalPrompts:
     
     Write the article:
     """
-    
+
     QUALITY_ASSESSMENT_PROMPT = """
     You are a legal content quality assessor. Evaluate the provided article for quality, accuracy, and compliance.
     
@@ -157,7 +158,7 @@ class LegalPrompts:
         "confidence_score": 0.92
     }
     """
-    
+
     TELEGRAM_FORMAT_PROMPT = """
     You are a Telegram message formatter for legal content distribution.
     
@@ -174,36 +175,38 @@ class LegalPrompts:
     
     Create Telegram post:
     """
-    
+
     @classmethod
     def get_extraction_prompt(cls, article_content: str) -> str:
         """Get data extraction prompt with article content."""
         return cls.EXTRACTION_PROMPT.format(article_content=article_content)
-    
+
     @classmethod
     def get_summarization_prompt(cls, article_content: str) -> str:
         """Get summarization prompt with article content."""
         return cls.SUMMARIZATION_PROMPT.format(article_content=article_content)
-    
+
     @classmethod
     def get_connection_prompt(cls, summaries: str) -> str:
         """Get connection analysis prompt with summaries."""
         return cls.CONNECTION_ANALYSIS_PROMPT.format(summaries=summaries)
-    
+
     @classmethod
-    def get_article_prompt(cls, summaries: str, connections: str, legal_significance: str) -> str:
+    def get_article_prompt(
+        cls, summaries: str, connections: str, legal_significance: str
+    ) -> str:
         """Get article generation prompt with context."""
         return cls.ARTICLE_GENERATION_PROMPT.format(
             summaries=summaries,
             connections=connections,
-            legal_significance=legal_significance
+            legal_significance=legal_significance,
         )
-    
+
     @classmethod
     def get_quality_prompt(cls, article_content: str) -> str:
         """Get quality assessment prompt with article content."""
         return cls.QUALITY_ASSESSMENT_PROMPT.format(article_content=article_content)
-    
+
     @classmethod
     def get_telegram_prompt(cls, article_content: str) -> str:
         """Get Telegram formatting prompt with article content."""

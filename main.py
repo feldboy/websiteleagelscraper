@@ -133,13 +133,11 @@ class LegalResearchOrchestrator:
             self.workflow_stats['articles_scraped'] = total_scraped
             logger.info(f"✅ Scraped {total_scraped} articles from {len(scraping_batches)} sources")
             
-            if total_scraped == 0:
-                logger.warning("⚠️ No articles were successfully scraped")
-                return self.workflow_stats
-            
             # Step 2: Data Extraction
             logger.info("🔍 Step 2: Extracting structured data from articles...")
-            processed_ids = await extraction_agent.process_unprocessed_articles(limit=total_scraped)
+            # Process existing articles even if no new ones were scraped
+            limit = max(total_scraped, 10)  # Process at least 10 existing articles if no new ones
+            processed_ids = await extraction_agent.process_unprocessed_articles(limit=limit)
             
             self.workflow_stats['articles_processed'] = len(processed_ids)
             logger.info(f"✅ Processed {len(processed_ids)} articles for data extraction")
