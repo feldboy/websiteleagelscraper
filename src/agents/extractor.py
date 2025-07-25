@@ -300,7 +300,7 @@ class ExtractionAgent:
         self.case_extractor = CaseExtractor()
 
     async def extract_article_data(
-        self, article_id: str, content: str, title: str = ""
+        self, article_id: str, content: str, title: str = "", source_url: str = ""
     ) -> ExtractedData:
         """
         Extract structured data from a legal article.
@@ -309,6 +309,7 @@ class ExtractionAgent:
             article_id: Unique identifier for the article
             content: Article content text
             title: Article title
+            source_url: Source URL of the article
 
         Returns:
             ExtractedData object with extracted information
@@ -345,7 +346,7 @@ class ExtractionAgent:
 
             extracted_data = ExtractedData(
                 article_id=article_id,
-                source_url=f"stored://article/{article_id}",  # Reference to stored article
+                source_url=source_url or f"https://example.com/article/{article_id}",  # Use provided URL or fallback
                 entities=all_entities,
                 cases=cases,
                 dates=dates,
@@ -580,14 +581,14 @@ class ExtractionAgent:
             for article in articles:
                 try:
                     extracted_data = await self.extract_article_data(
-                        article["id"], article["content"], article["title"]
+                        article["id"], article["content"], article["title"], article.get("url", "")
                     )
 
                     # Store extraction in database
                     extraction_id = await database_agent.store_extraction(
                         extracted_data
                     )
-                    processed_ids.append(extraction_id)
+                    processed_ids.append(article["id"])  # Return article ID, not extraction ID
 
                     logger.info(
                         f"Processed article {article['id']} -> extraction {extraction_id}"

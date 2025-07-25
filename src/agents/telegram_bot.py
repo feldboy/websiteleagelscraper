@@ -249,21 +249,8 @@ class TelegramFormatter:
         sources = []
         
         if hasattr(article, 'source_summaries') and article.source_summaries:
-            # Extract source information from summaries
-            for i, summary in enumerate(article.source_summaries[:3], 1):  # Limit to 3 sources
-                # Try to extract source name from summary
-                if "Law.com" in summary or "law.com" in summary:
-                    sources.append(f"Law.com Legal News")
-                elif "Legal Reader" in summary or "legalreader.com" in summary:
-                    sources.append(f"Legal Reader")
-                elif "Above the Law" in summary or "abovethelaw.com" in summary:
-                    sources.append(f"Above the Law")
-                elif "Reuters" in summary:
-                    sources.append(f"Reuters Legal")
-                elif "Bloomberg" in summary:
-                    sources.append(f"Bloomberg Law")
-                else:
-                    sources.append(f"Legal News Source {i}")
+            # Use the source names directly (they're now actual source names, not article IDs)
+            sources = article.source_summaries[:3]  # Limit to 3 sources for readability
         
         # Fallback to generic legal sources if no specific sources found
         if not sources:

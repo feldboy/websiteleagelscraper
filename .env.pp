@@ -1,20 +1,20 @@
-# Testing Environment Configuration
-ENV=test
+# Pre-Production Environment Configuration
+ENV=pp
 DEBUG=false
 
 # Database Configuration
-DATABASE_URL=postgresql+asyncpg://legaltest:testpass@test-db:5432/legaldb_test
+DATABASE_URL=postgresql+asyncpg://legalpp:pppass@pp-db:5432/legaldb_pp
 
 # LLM Configuration
-OPENAI_API_KEY=sk-your-openai-api-key-test
-ANTHROPIC_API_KEY=sk-your-anthropic-api-key-test
+OPENAI_API_KEY=sk-your-openai-api-key-pp
+ANTHROPIC_API_KEY=sk-your-anthropic-api-key-pp
 LLM_PROVIDER=openai
 MAX_TOKENS=800
 TEMPERATURE=0.7
 
 # Telegram Configuration
-TELEGRAM_BOT_TOKEN=your-telegram-bot-token-test
-TELEGRAM_CHANNEL_ID=your-test-channel-id
+TELEGRAM_BOT_TOKEN=your-telegram-bot-token-pp
+TELEGRAM_CHANNEL_ID=your-pp-channel-id
 
 # Scraping Configuration
 USER_AGENT_ROTATION=true
@@ -25,15 +25,15 @@ REQUEST_TIMEOUT=30
 
 # Quality Assurance
 MIN_WORD_COUNT=500
-MAX_WORD_COUNT=700
-MIN_ORIGINALITY_SCORE=0.93
+MAX_WORD_COUNT=600
+MIN_ORIGINALITY_SCORE=0.95
 
 # Monitoring and Logging
 LOG_LEVEL=INFO
 METRICS_ENABLED=true
 
 # Redis Configuration
-REDIS_URL=redis://test-redis:6379
+REDIS_URL=redis://pp-redis:6379
 
 # Scheduling Configuration
-SCRAPING_INTERVAL_HOURS=6
+SCRAPING_INTERVAL_HOURS=4

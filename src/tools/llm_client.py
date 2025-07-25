@@ -26,6 +26,7 @@ class LLMProvider(Enum):
     ANTHROPIC = "anthropic"
     OPENROUTER = "openrouter"
     DEEPSEEK = "deepseek"
+    KIMI = "kimi"
 
 
 @dataclass
@@ -525,6 +526,115 @@ class DeepSeekProvider(LLMProviderBase):
         return input_cost + output_cost
 
 
+class KimiProvider(LLMProviderBase):
+    """Kimi K2 API provider implementation."""
+
+    def __init__(self, api_key: str):
+        self.api_key = api_key
+        self.base_url = "https://api.moonshot.cn/v1"
+        self.model = "moonshot-v1-8k"
+
+        # Token costs per 1K tokens (approximate)
+        self.cost_per_1k_tokens = {
+            "moonshot-v1-8k": {"input": 0.012, "output": 0.012},
+            "moonshot-v1-32k": {"input": 0.024, "output": 0.024},
+            "moonshot-v1-128k": {"input": 0.06, "output": 0.06},
+        }
+
+    async def generate(
+        self, prompt: str, max_tokens: int = 800, temperature: float = 0.7, **kwargs
+    ) -> LLMResponse:
+        """Generate content using Kimi K2 API."""
+        start_time = datetime.now()
+
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+
+        payload = {
+            "model": self.model,
+            "messages": [{"role": "user", "content": prompt}],
+            "max_tokens": max_tokens,
+            "temperature": temperature,
+            **kwargs,
+        }
+
+        try:
+            async with aiohttp.ClientSession() as session:
+                async with session.post(
+                    f"{self.base_url}/chat/completions",
+                    headers=headers,
+                    json=payload,
+                    timeout=aiohttp.ClientTimeout(total=120),
+                ) as response:
+                    response_data = await response.json()
+
+                    if response.status == 200:
+                        content = response_data["choices"][0]["message"]["content"]
+                        usage = response_data.get("usage", {})
+                        tokens_used = usage.get("total_tokens", 0)
+
+                        # Calculate cost estimate
+                        cost_estimate = self._calculate_cost(usage)
+
+                        response_time = (datetime.now() - start_time).total_seconds()
+
+                        return LLMResponse(
+                            content=content,
+                            provider="kimi",
+                            model=self.model,
+                            tokens_used=tokens_used,
+                            cost_estimate=cost_estimate,
+                            response_time=response_time,
+                            success=True,
+                            metadata=response_data,
+                        )
+                    else:
+                        error_msg = response_data.get("error", {}).get(
+                            "message", "Unknown error"
+                        )
+                        response_time = (datetime.now() - start_time).total_seconds()
+
+                        return LLMResponse(
+                            content="",
+                            provider="kimi",
+                            model=self.model,
+                            tokens_used=0,
+                            cost_estimate=0.0,
+                            response_time=response_time,
+                            success=False,
+                            error=f"API Error: {error_msg}",
+                        )
+
+        except Exception as e:
+            response_time = (datetime.now() - start_time).total_seconds()
+            return LLMResponse(
+                content="",
+                provider="kimi",
+                model=self.model,
+                tokens_used=0,
+                cost_estimate=0.0,
+                response_time=response_time,
+                success=False,
+                error=f"Request failed: {str(e)}",
+            )
+
+    def _calculate_cost(self, usage: Dict[str, int]) -> float:
+        """Calculate cost estimate based on token usage."""
+        if self.model not in self.cost_per_1k_tokens:
+            return 0.0
+
+        costs = self.cost_per_1k_tokens[self.model]
+        input_tokens = usage.get("prompt_tokens", 0)
+        output_tokens = usage.get("completion_tokens", 0)
+
+        input_cost = (input_tokens / 1000) * costs["input"]
+        output_cost = (output_tokens / 1000) * costs["output"]
+
+        return input_cost + output_cost
+
+
 class LLMClient:
     """
     Centralized LLM client with retry logic and provider abstraction.
@@ -554,6 +664,10 @@ class LLMClient:
             if not settings.deepseek_api_key:
                 raise ValueError("Deepseek API key is required")
             return DeepSeekProvider(settings.deepseek_api_key)
+        elif settings.llm_provider == "kimi":
+            if not settings.kimi_api_key:
+                raise ValueError("Kimi API key is required")
+            return KimiProvider(settings.kimi_api_key)
         else:
             raise ValueError(f"Unsupported LLM provider: {settings.llm_provider}")
 

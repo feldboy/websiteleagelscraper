@@ -36,10 +36,15 @@ class Settings(BaseSettings):
         env="DEEPSEEK_API_KEY",
         description="Deepseek API key for content generation",
     )
+    kimi_api_key: Optional[str] = Field(
+        None,
+        env="KIMI_API_KEY",
+        description="Kimi API key for content generation",
+    )
     llm_provider: str = Field(
         "openai",
         env="LLM_PROVIDER",
-        description="LLM provider to use (openai, anthropic, openrouter, deepseek)",
+        description="LLM provider to use (openai, anthropic, openrouter, deepseek, kimi)",
     )
     max_tokens: int = Field(
         800, env="MAX_TOKENS", description="Maximum tokens for LLM responses"
@@ -125,7 +130,7 @@ class Settings(BaseSettings):
     @validator("llm_provider")
     def validate_llm_provider(cls, v):
         """Validate LLM provider choice."""
-        allowed_providers = ["openai", "anthropic", "openrouter", "deepseek"]
+        allowed_providers = ["openai", "anthropic", "openrouter", "deepseek", "kimi"]
         if v not in allowed_providers:
             raise ValueError(f"LLM provider must be one of: {allowed_providers}")
         return v
@@ -153,6 +158,10 @@ class Settings(BaseSettings):
         elif self.llm_provider == "deepseek" and not self.deepseek_api_key:
             raise ValueError(
                 "Deepseek API key is required when using Deepseek provider"
+            )
+        elif self.llm_provider == "kimi" and not self.kimi_api_key:
+            raise ValueError(
+                "Kimi API key is required when using Kimi provider"
             )
 
     class Config:

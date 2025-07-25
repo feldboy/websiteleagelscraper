@@ -142,9 +142,19 @@ class LegalResearchOrchestrator:
             self.workflow_stats['articles_processed'] = len(processed_ids)
             logger.info(f"✅ Processed {len(processed_ids)} articles for data extraction")
             
+            # If no new articles were processed, get existing processed articles
             if len(processed_ids) == 0:
-                logger.warning("⚠️ No articles were successfully processed")
-                return self.workflow_stats
+                logger.info("No new articles processed, using existing processed articles...")
+                # Get already processed article IDs from database
+                db_stats = await database_agent.get_database_stats()
+                if db_stats.get('processed_articles', 0) > 0:
+                    # Get processed articles for summarization
+                    processed_articles = await database_agent.get_processed_articles(limit=5)
+                    processed_ids = [article["id"] for article in processed_articles]
+                    logger.info(f"Found {len(processed_ids)} existing processed articles")
+                else:
+                    logger.warning("⚠️ No articles available for processing")
+                    return self.workflow_stats
             
             # Step 3: Summarization
             logger.info("📝 Step 3: Generating article summaries...")

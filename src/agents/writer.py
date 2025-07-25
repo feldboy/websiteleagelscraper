@@ -36,7 +36,7 @@ class GeneratedArticle(BaseModel):
 
     # Metadata
     summary: str = Field(
-        ..., min_length=50, max_length=200, description="Article summary"
+        ..., min_length=50, description="Article summary"
     )
     tags: List[str] = Field(..., min_items=3, max_items=8, description="Article tags")
     category: str = Field("Legal News", description="Article category")
@@ -475,7 +475,7 @@ class WriterAgent:
                     article = improved_article
 
             # Set source attribution
-            article.source_summaries = [summary.article_id for summary in summaries]
+            article.source_summaries = [summary.source_name for summary in summaries]
             if connections:
                 article.connections_used = [
                     conn.description for conn in connections.direct_connections[:3]

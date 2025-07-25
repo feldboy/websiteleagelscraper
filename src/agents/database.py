@@ -186,14 +186,23 @@ class DatabaseAgent:
             return
 
         try:
-            # Create async engine
+            # Create async engine with appropriate parameters for database type
+            engine_kwargs = {
+                "echo": False,  # Set to True for SQL debugging
+            }
+            
+            # Only add pool parameters for databases that support them (not SQLite)
+            if not settings.database_url.startswith("sqlite"):
+                engine_kwargs.update({
+                    "pool_size": 10,
+                    "max_overflow": 20,
+                    "pool_timeout": 30,
+                    "pool_recycle": 3600,
+                })
+            
             self.engine = create_async_engine(
                 settings.database_url,
-                echo=False,  # Set to True for SQL debugging
-                pool_size=10,
-                max_overflow=20,
-                pool_timeout=30,
-                pool_recycle=3600,
+                **engine_kwargs
             )
 
             # Create session factory
@@ -318,9 +327,14 @@ class DatabaseAgent:
         async with self.get_session() as session:
             try:
                 # Verify article exists
+                # Convert string UUID to UUID object if needed
+                article_uuid = extracted_data.article_id
+                if isinstance(article_uuid, str):
+                    article_uuid = uuid.UUID(article_uuid)
+                    
                 article_exists = await session.execute(
                     select(ArticleRecord).where(
-                        ArticleRecord.id == extracted_data.article_id
+                        ArticleRecord.id == article_uuid
                     )
                 )
                 if not article_exists.scalar():
@@ -328,7 +342,7 @@ class DatabaseAgent:
 
                 # Create extraction record
                 extraction = ExtractionRecord(
-                    article_id=extracted_data.article_id,
+                    article_id=article_uuid,
                     entities=[entity.dict() for entity in extracted_data.entities],
                     cases=[case.dict() for case in extracted_data.cases],
                     dates=[date_obj.dict() for date_obj in extracted_data.dates],
@@ -359,7 +373,7 @@ class DatabaseAgent:
                 # Mark article as extraction completed
                 await session.execute(
                     update(ArticleRecord)
-                    .where(ArticleRecord.id == extracted_data.article_id)
+                    .where(ArticleRecord.id == article_uuid)
                     .values(extraction_completed=True, processed=True)
                 )
 
@@ -459,6 +473,66 @@ class DatabaseAgent:
 
             except Exception as e:
                 logger.error(f"Error getting unprocessed articles: {e}")
+                raise
+
+    async def get_processed_articles(self, limit: int = 100) -> List[Dict[str, Any]]:
+        """Get articles that have been processed for extraction."""
+        async with self.get_session() as session:
+            try:
+                result = await session.execute(
+                    select(ArticleRecord)
+                    .where(ArticleRecord.processed == True)
+                    .order_by(ArticleRecord.scraped_at.desc())
+                    .limit(limit)
+                )
+
+                articles = []
+                for record in result.scalars():
+                    articles.append(
+                        {
+                            "id": str(record.id),
+                            "url": record.url,
+                            "title": record.title,
+                            "content": record.content,
+                            "source_name": record.source_name,
+                            "scraped_at": record.scraped_at,
+                        }
+                    )
+
+                return articles
+
+            except Exception as e:
+                logger.error(f"Error getting processed articles: {e}")
+                raise
+
+    async def get_article_by_id(self, article_id: str) -> Optional[Dict[str, Any]]:
+        """Get a specific article by its ID."""
+        async with self.get_session() as session:
+            try:
+                # Convert string UUID to UUID object
+                if isinstance(article_id, str):
+                    article_uuid = uuid.UUID(article_id)
+                else:
+                    article_uuid = article_id
+
+                result = await session.execute(
+                    select(ArticleRecord).where(ArticleRecord.id == article_uuid)
+                )
+
+                record = result.scalar()
+                if record:
+                    return {
+                        "id": str(record.id),
+                        "url": record.url,
+                        "title": record.title,
+                        "content": record.content,
+                        "source_name": record.source_name,
+                        "scraped_at": record.scraped_at,
+                    }
+                return None
+
+            except Exception as e:
+                logger.error(f"Error getting article by ID {article_id}: {e}")
                 raise
 
     async def get_extraction_by_article_id(

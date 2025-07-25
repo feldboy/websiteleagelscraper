@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  # Main application
+  legal-research:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - PYTHONPATH=/app/src
+    env_file:
+      - .env.dev
+    depends_on:
+      - postgres
+      - redis
+    volumes:
+      - ./logs:/app/logs
+    restart: unless-stopped
+
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15
+    container_name: dev-db
+    environment:
+      - POSTGRES_DB=legaldb_dev
+      - POSTGRES_USER=legaldev
+      - POSTGRES_PASSWORD=devpass
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+
+  # Redis for task queuing
+  redis:
+    image: redis:7-alpine
+    container_name: dev-redis
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+
+volumes:
+  postgres_data:

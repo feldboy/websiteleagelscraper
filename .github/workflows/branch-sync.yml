@@ -1,0 +1,184 @@
+name: Branch Synchronization
+
+on:
+  push:
+    branches: [ dev, test, pp ]
+  workflow_dispatch:
+    inputs:
+      source_branch:
+        description: 'Source branch to sync from'
+        required: true
+        default: 'dev'
+        type: choice
+        options:
+        - dev
+        - test
+        - pp
+      target_branch:
+        description: 'Target branch to sync to'
+        required: true
+        default: 'test'
+        type: choice
+        options:
+        - test
+        - pp
+        - main
+
+jobs:
+  sync-dev-to-test:
+    name: Sync dev → test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/dev' && github.event_name == 'push'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Configure Git
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+    - name: Create Pull Request dev → test
+      uses: peter-evans/create-pull-request@v5
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        base: test
+        branch: sync/dev-to-test
+        title: "🔄 Auto-sync: dev → test"
+        body: |
+          ## Automated Branch Synchronization
+          
+          This PR automatically synchronizes changes from `dev` to `test` branch.
+          
+          **Changes included:**
+          - Latest commits from `dev` branch
+          - Ready for testing environment deployment
+          
+          **Next Steps:**
+          1. Review changes
+          2. Merge to trigger test environment deployment
+          3. Validate in test environment
+          4. Consider promoting to pre-production
+        delete-branch: true
+
+  sync-test-to-pp:
+    name: Sync test → pp
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/test' && github.event_name == 'push'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Configure Git
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+    - name: Create Pull Request test → pp
+      uses: peter-evans/create-pull-request@v5
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        base: pp
+        branch: sync/test-to-pp
+        title: "🚀 Auto-sync: test → pp"
+        body: |
+          ## Automated Branch Synchronization
+          
+          This PR automatically synchronizes tested changes from `test` to `pp` (pre-production) branch.
+          
+          **Changes included:**
+          - Validated changes from `test` branch
+          - Ready for pre-production deployment
+          
+          **Next Steps:**
+          1. Review changes
+          2. Merge to trigger pre-production deployment
+          3. Final validation in pre-production
+          4. Consider promoting to production
+        delete-branch: true
+
+  sync-pp-to-main:
+    name: Sync pp → main
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/pp' && github.event_name == 'push'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Configure Git
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+    - name: Create Pull Request pp → main
+      uses: peter-evans/create-pull-request@v5
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        base: main
+        branch: sync/pp-to-main
+        title: "🎯 Production Release: pp → main"
+        body: |
+          ## Production Release
+          
+          This PR promotes validated changes from pre-production to production.
+          
+          **Changes included:**
+          - Fully validated changes from `pp` branch
+          - Ready for production deployment
+          
+          **⚠️ Production Deployment**
+          Merging this PR will trigger production deployment.
+          
+          **Checklist:**
+          - [ ] All tests passing
+          - [ ] Pre-production validation complete
+          - [ ] Database migrations reviewed
+          - [ ] Rollback plan prepared
+        delete-branch: true
+
+  manual-sync:
+    name: Manual Branch Sync
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Configure Git
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+    - name: Create Manual Sync Pull Request
+      uses: peter-evans/create-pull-request@v5
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        base: ${{ github.event.inputs.target_branch }}
+        branch: sync/${{ github.event.inputs.source_branch }}-to-${{ github.event.inputs.target_branch }}
+        title: "🔧 Manual sync: ${{ github.event.inputs.source_branch }} → ${{ github.event.inputs.target_branch }}"
+        body: |
+          ## Manual Branch Synchronization
+          
+          This PR was manually triggered to synchronize changes.
+          
+          **Source:** `${{ github.event.inputs.source_branch }}`
+          **Target:** `${{ github.event.inputs.target_branch }}`
+          
+          Please review the changes before merging.
+        delete-branch: true

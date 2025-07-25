@@ -515,3 +515,905 @@ source_url
 2025-07-21 16:33:38,027 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
 2025-07-21 16:33:38,027 - __main__ - INFO - ✅ Database connections closed
 2025-07-21 16:33:38,027 - __main__ - INFO - ✅ System shutdown completed
+2025-07-21 18:54:58,873 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-21 18:54:58,898 - agents.database - INFO - Database agent initialized successfully
+2025-07-21 18:54:58,898 - __main__ - INFO - ✅ Database agent initialized
+2025-07-21 18:54:58,898 - __main__ - INFO - ✅ System configuration verified
+2025-07-21 18:55:02,852 - tools.llm_client - INFO - LLM call successful: 15 tokens, $0.0000, 3.95s
+2025-07-21 18:55:02,852 - __main__ - INFO - ✅ LLM connectivity verified
+2025-07-21 18:55:02,852 - __main__ - INFO - 🎉 System initialization completed successfully
+2025-07-21 18:55:02,852 - __main__ - INFO - Running scraping-only workflow
+2025-07-21 18:55:02,852 - __main__ - INFO - 🔄 Starting scraping-only workflow...
+2025-07-21 18:55:04,541 - agents.web_scraper - INFO - Discovered 0 article URLs for Law.com
+2025-07-21 18:55:04,541 - agents.web_scraper - WARNING - No articles found for source: law_com
+2025-07-21 18:55:09,142 - agents.web_scraper - INFO - Discovered 3 article URLs for Legal Reader
+2025-07-21 18:55:20,569 - agents.web_scraper - INFO - Completed scraping batch 81993b74-47bd-4b01-8ea6-cff442800215: 0/3 successful
+2025-07-21 18:55:24,110 - agents.web_scraper - INFO - Discovered 3 article URLs for Above the Law
+2025-07-21 18:55:34,023 - agents.web_scraper - INFO - Completed scraping batch 5d63f67a-5898-4a44-91bf-bc93ab3f8f42: 0/3 successful
+2025-07-21 18:55:37,414 - agents.web_scraper - INFO - Discovered 0 article URLs for Law360 Public
+2025-07-21 18:55:37,415 - agents.web_scraper - WARNING - No articles found for source: law360_backup
+2025-07-21 18:55:39,440 - __main__ - INFO - 🎯 Final Results:
+2025-07-21 18:55:39,440 - __main__ - INFO -   articles_scraped: 0
+2025-07-21 18:55:39,440 - __main__ - INFO -   articles_processed: 0
+2025-07-21 18:55:39,440 - __main__ - INFO -   verification_stats:
+2025-07-21 18:55:39,440 - __main__ - INFO -     total_articles: 0
+2025-07-21 18:55:39,440 - __main__ - INFO -     processed_articles: 0
+2025-07-21 18:55:39,440 - __main__ - INFO -     verification_rate: 0.0
+2025-07-21 18:55:39,440 - __main__ - INFO -     timestamp: 2025-07-21 18:55:39.440138
+2025-07-21 18:55:39,440 - __main__ - INFO -   sources_scraped: 4
+2025-07-21 18:55:39,440 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-21 18:55:39,441 - __main__ - INFO - ✅ Database connections closed
+2025-07-21 18:55:39,441 - __main__ - INFO - ✅ System shutdown completed
+2025-07-21 18:57:11,950 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-21 18:57:11,962 - agents.database - INFO - Database agent initialized successfully
+2025-07-21 18:57:11,962 - __main__ - INFO - ✅ Database agent initialized
+2025-07-21 18:57:11,962 - __main__ - INFO - ✅ System configuration verified
+2025-07-21 18:57:16,518 - tools.llm_client - INFO - LLM call successful: 15 tokens, $0.0000, 4.56s
+2025-07-21 18:57:16,518 - __main__ - INFO - ✅ LLM connectivity verified
+2025-07-21 18:57:16,518 - __main__ - INFO - 🎉 System initialization completed successfully
+2025-07-21 18:57:16,518 - __main__ - INFO - Running scraping-only workflow
+2025-07-21 18:57:16,518 - __main__ - INFO - 🔄 Starting scraping-only workflow...
+2025-07-21 18:57:18,075 - agents.web_scraper - INFO - Discovered 0 article URLs for Law.com
+2025-07-21 18:57:18,076 - agents.web_scraper - WARNING - No articles found for source: law_com
+2025-07-21 18:57:22,102 - agents.web_scraper - INFO - Discovered 3 article URLs for Legal Reader
+2025-07-21 18:57:34,225 - agents.web_scraper - INFO - Completed scraping batch afdcd950-1c4b-454c-af9f-54f842a11b99: 0/3 successful
+2025-07-21 18:57:37,113 - agents.web_scraper - INFO - Discovered 3 article URLs for Above the Law
+2025-07-21 18:57:46,612 - agents.web_scraper - INFO - Completed scraping batch 537c6fbf-5a77-413d-b67b-4d1ad0905077: 0/3 successful
+2025-07-21 18:57:49,999 - agents.web_scraper - INFO - Discovered 0 article URLs for Law360 Public
+2025-07-21 18:57:49,999 - agents.web_scraper - WARNING - No articles found for source: law360_backup
+2025-07-21 18:57:52,024 - __main__ - INFO - 🎯 Final Results:
+2025-07-21 18:57:52,024 - __main__ - INFO -   articles_scraped: 0
+2025-07-21 18:57:52,024 - __main__ - INFO -   articles_processed: 0
+2025-07-21 18:57:52,024 - __main__ - INFO -   verification_stats:
+2025-07-21 18:57:52,024 - __main__ - INFO -     total_articles: 0
+2025-07-21 18:57:52,024 - __main__ - INFO -     processed_articles: 0
+2025-07-21 18:57:52,024 - __main__ - INFO -     verification_rate: 0.0
+2025-07-21 18:57:52,024 - __main__ - INFO -     timestamp: 2025-07-21 18:57:52.024435
+2025-07-21 18:57:52,024 - __main__ - INFO -   sources_scraped: 4
+2025-07-21 18:57:52,024 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-21 18:57:52,025 - __main__ - INFO - ✅ Database connections closed
+2025-07-21 18:57:52,025 - __main__ - INFO - ✅ System shutdown completed
+2025-07-25 10:59:39,984 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-25 10:59:39,988 - agents.database - ERROR - Failed to initialize database: No module named 'aiosqlite'
+2025-07-25 10:59:39,988 - __main__ - ERROR - ❌ System initialization failed: No module named 'aiosqlite'
+2025-07-25 10:59:39,988 - __main__ - ERROR - Failed to initialize system
+2025-07-25 10:59:39,988 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-25 10:59:39,988 - __main__ - INFO - ✅ Database connections closed
+2025-07-25 10:59:39,988 - __main__ - INFO - ✅ System shutdown completed
+2025-07-25 10:59:50,742 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-25 10:59:50,762 - agents.database - ERROR - Failed to initialize database: Invalid argument(s) 'pool_size','max_overflow','pool_timeout' sent to create_engine(), using configuration SQLiteDialect_aiosqlite/NullPool/Engine.  Please check that the keyword arguments are appropriate for this combination of components.
+2025-07-25 10:59:50,762 - __main__ - ERROR - ❌ System initialization failed: Invalid argument(s) 'pool_size','max_overflow','pool_timeout' sent to create_engine(), using configuration SQLiteDialect_aiosqlite/NullPool/Engine.  Please check that the keyword arguments are appropriate for this combination of components.
+2025-07-25 10:59:50,762 - __main__ - ERROR - Failed to initialize system
+2025-07-25 10:59:50,762 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-25 10:59:50,762 - __main__ - INFO - ✅ Database connections closed
+2025-07-25 10:59:50,762 - __main__ - INFO - ✅ System shutdown completed
+2025-07-25 11:00:50,179 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-25 11:00:50,192 - agents.database - INFO - Database agent initialized successfully
+2025-07-25 11:00:50,192 - __main__ - INFO - ✅ Database agent initialized
+2025-07-25 11:00:50,192 - __main__ - INFO - ✅ System configuration verified
+2025-07-25 11:00:54,421 - tools.llm_client - INFO - LLM call successful: 15 tokens, $0.0000, 4.23s
+2025-07-25 11:00:54,421 - __main__ - INFO - ✅ LLM connectivity verified
+2025-07-25 11:00:54,421 - __main__ - INFO - 🎉 System initialization completed successfully
+2025-07-25 11:00:54,422 - __main__ - INFO - Running complete workflow
+2025-07-25 11:00:54,422 - __main__ - INFO - 🔄 Starting complete legal research workflow...
+2025-07-25 11:00:54,422 - __main__ - INFO - 📰 Step 1: Web scraping legal news sources...
+2025-07-25 11:00:56,374 - agents.web_scraper - INFO - Discovered 0 article URLs for Law.com
+2025-07-25 11:00:56,374 - agents.web_scraper - WARNING - No articles found for source: law_com
+2025-07-25 11:01:00,973 - agents.web_scraper - INFO - Discovered 2 article URLs for Legal Reader
+2025-07-25 11:01:12,601 - agents.web_scraper - INFO - Completed scraping batch e276de15-c1f8-41c2-8d16-9a029e03f9e1: 0/2 successful
+2025-07-25 11:01:15,511 - agents.web_scraper - INFO - Discovered 2 article URLs for Above the Law
+2025-07-25 11:01:22,169 - agents.web_scraper - INFO - Completed scraping batch f638d3c3-a9a9-4c9b-9da9-e61acf1b912c: 0/2 successful
+2025-07-25 11:01:25,560 - agents.web_scraper - INFO - Discovered 0 article URLs for Law360 Public
+2025-07-25 11:01:25,560 - agents.web_scraper - WARNING - No articles found for source: law360_backup
+2025-07-25 11:01:27,562 - __main__ - INFO - ✅ Scraped 0 articles from 4 sources
+2025-07-25 11:01:27,562 - __main__ - INFO - 🔍 Step 2: Extracting structured data from articles...
+2025-07-25 11:01:27,579 - __main__ - INFO - ✅ Processed 0 articles for data extraction
+2025-07-25 11:01:27,579 - __main__ - WARNING - ⚠️ No articles were successfully processed
+2025-07-25 11:01:27,579 - __main__ - INFO - ⏱️ Workflow completed in 33.2 seconds
+2025-07-25 11:01:27,579 - __main__ - INFO - 🎯 Final Results:
+2025-07-25 11:01:27,579 - __main__ - INFO -   articles_scraped: 0
+2025-07-25 11:01:27,579 - __main__ - INFO -   articles_processed: 0
+2025-07-25 11:01:27,579 - __main__ - INFO -   articles_generated: 0
+2025-07-25 11:01:27,579 - __main__ - INFO -   articles_published: 0
+2025-07-25 11:01:27,579 - __main__ - INFO -   start_time: 2025-07-25 11:00:54.422132
+2025-07-25 11:01:27,579 - __main__ - INFO -   end_time: 2025-07-25 11:01:27.579571
+2025-07-25 11:01:27,580 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-25 11:01:27,580 - __main__ - INFO - ✅ Database connections closed
+2025-07-25 11:01:27,580 - __main__ - INFO - ✅ System shutdown completed
+2025-07-25 11:02:55,961 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-25 11:02:55,973 - agents.database - INFO - Database agent initialized successfully
+2025-07-25 11:02:55,973 - __main__ - INFO - ✅ Database agent initialized
+2025-07-25 11:02:55,973 - __main__ - INFO - ✅ System configuration verified
+2025-07-25 11:03:00,445 - tools.llm_client - INFO - LLM call successful: 15 tokens, $0.0000, 4.47s
+2025-07-25 11:03:00,445 - __main__ - INFO - ✅ LLM connectivity verified
+2025-07-25 11:03:00,445 - __main__ - INFO - 🎉 System initialization completed successfully
+2025-07-25 11:03:00,445 - __main__ - INFO - Running complete workflow
+2025-07-25 11:03:00,446 - __main__ - INFO - 🔄 Starting complete legal research workflow...
+2025-07-25 11:03:00,446 - __main__ - INFO - 📰 Step 1: Web scraping legal news sources...
+2025-07-25 11:03:03,797 - agents.web_scraper - INFO - Discovered 0 article URLs for Law.com
+2025-07-25 11:03:03,798 - agents.web_scraper - WARNING - No articles found for source: law_com
+2025-07-25 11:03:07,725 - agents.web_scraper - INFO - Discovered 2 article URLs for Legal Reader
+2025-07-25 11:03:16,199 - agents.web_scraper - INFO - Completed scraping batch 6dc884d1-5cbb-41ad-af8c-ef294a04ce7f: 0/2 successful
+2025-07-25 11:03:18,975 - agents.web_scraper - INFO - Discovered 2 article URLs for Above the Law
+2025-07-25 11:03:25,585 - agents.web_scraper - INFO - Completed scraping batch 592f0da2-ae80-4309-8c39-5d3963552c46: 0/2 successful
+2025-07-25 11:03:29,026 - agents.web_scraper - INFO - Discovered 0 article URLs for Law360 Public
+2025-07-25 11:03:29,027 - agents.web_scraper - WARNING - No articles found for source: law360_backup
+2025-07-25 11:03:31,029 - __main__ - INFO - ✅ Scraped 0 articles from 4 sources
+2025-07-25 11:03:31,029 - __main__ - INFO - 🔍 Step 2: Extracting structured data from articles...
+2025-07-25 11:03:31,067 - agents.extractor - WARNING - LLM extraction failed: '\n        "case_names"'
+2025-07-25 11:03:31,068 - agents.extractor - ERROR - Error extracting data from article 65e6b54d-efe4-4a12-be3d-5706258fa47f: 1 validation error for ExtractedData
+source_url
+  URL scheme should be 'http' or 'https' [type=url_scheme, input_value='stored://article/65e6b54...-4a12-be3d-5706258fa47f', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.5/v/url_scheme
+2025-07-25 11:03:31,069 - agents.extractor - ERROR - Failed to process article 65e6b54d-efe4-4a12-be3d-5706258fa47f: 1 validation error for ExtractedData
+source_url
+  URL scheme should be 'http' or 'https' [type=url_scheme, input_value='stored://article/65e6b54...-4a12-be3d-5706258fa47f', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.5/v/url_scheme
+2025-07-25 11:03:31,071 - agents.extractor - WARNING - LLM extraction failed: '\n        "case_names"'
+2025-07-25 11:03:31,072 - agents.extractor - ERROR - Error extracting data from article 6c7cd47b-8ea5-4c0e-9b69-f43bfd216d3e: 1 validation error for ExtractedData
+source_url
+  URL scheme should be 'http' or 'https' [type=url_scheme, input_value='stored://article/6c7cd47...-4c0e-9b69-f43bfd216d3e', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.5/v/url_scheme
+2025-07-25 11:03:31,072 - agents.extractor - ERROR - Failed to process article 6c7cd47b-8ea5-4c0e-9b69-f43bfd216d3e: 1 validation error for ExtractedData
+source_url
+  URL scheme should be 'http' or 'https' [type=url_scheme, input_value='stored://article/6c7cd47...-4c0e-9b69-f43bfd216d3e', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.5/v/url_scheme
+2025-07-25 11:03:31,074 - agents.extractor - WARNING - LLM extraction failed: '\n        "case_names"'
+2025-07-25 11:03:31,074 - agents.extractor - ERROR - Error extracting data from article a6fec2a5-30ca-46b1-b7e6-3b3a91033bea: 1 validation error for ExtractedData
+source_url
+  URL scheme should be 'http' or 'https' [type=url_scheme, input_value='stored://article/a6fec2a...-46b1-b7e6-3b3a91033bea', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.5/v/url_scheme
+2025-07-25 11:03:31,074 - agents.extractor - ERROR - Failed to process article a6fec2a5-30ca-46b1-b7e6-3b3a91033bea: 1 validation error for ExtractedData
+source_url
+  URL scheme should be 'http' or 'https' [type=url_scheme, input_value='stored://article/a6fec2a...-46b1-b7e6-3b3a91033bea', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.5/v/url_scheme
+2025-07-25 11:03:31,074 - __main__ - INFO - ✅ Processed 0 articles for data extraction
+2025-07-25 11:03:31,074 - __main__ - WARNING - ⚠️ No articles were successfully processed
+2025-07-25 11:03:31,074 - __main__ - INFO - ⏱️ Workflow completed in 30.6 seconds
+2025-07-25 11:03:31,074 - __main__ - INFO - 🎯 Final Results:
+2025-07-25 11:03:31,074 - __main__ - INFO -   articles_scraped: 0
+2025-07-25 11:03:31,074 - __main__ - INFO -   articles_processed: 0
+2025-07-25 11:03:31,074 - __main__ - INFO -   articles_generated: 0
+2025-07-25 11:03:31,074 - __main__ - INFO -   articles_published: 0
+2025-07-25 11:03:31,074 - __main__ - INFO -   start_time: 2025-07-25 11:03:00.446052
+2025-07-25 11:03:31,075 - __main__ - INFO -   end_time: 2025-07-25 11:03:31.074776
+2025-07-25 11:03:31,075 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-25 11:03:31,075 - __main__ - INFO - ✅ Database connections closed
+2025-07-25 11:03:31,075 - __main__ - INFO - ✅ System shutdown completed
+2025-07-25 11:04:24,321 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-25 11:04:24,335 - agents.database - INFO - Database agent initialized successfully
+2025-07-25 11:04:24,335 - __main__ - INFO - ✅ Database agent initialized
+2025-07-25 11:04:24,335 - __main__ - INFO - ✅ System configuration verified
+2025-07-25 11:04:28,441 - tools.llm_client - INFO - LLM call successful: 15 tokens, $0.0000, 4.11s
+2025-07-25 11:04:28,441 - __main__ - INFO - ✅ LLM connectivity verified
+2025-07-25 11:04:28,442 - __main__ - INFO - 🎉 System initialization completed successfully
+2025-07-25 11:04:28,442 - __main__ - INFO - Running complete workflow
+2025-07-25 11:04:28,442 - __main__ - INFO - 🔄 Starting complete legal research workflow...
+2025-07-25 11:04:28,442 - __main__ - INFO - 📰 Step 1: Web scraping legal news sources...
+2025-07-25 11:04:30,018 - agents.web_scraper - INFO - Discovered 0 article URLs for Law.com
+2025-07-25 11:04:30,018 - agents.web_scraper - WARNING - No articles found for source: law_com
+2025-07-25 11:04:33,999 - agents.web_scraper - INFO - Discovered 2 article URLs for Legal Reader
+2025-07-25 11:04:41,385 - agents.web_scraper - INFO - Completed scraping batch a5132e96-2dc4-4f57-946f-5993a52e76e2: 0/2 successful
+2025-07-25 11:04:44,128 - agents.web_scraper - INFO - Discovered 2 article URLs for Above the Law
+2025-07-25 11:04:50,449 - agents.web_scraper - INFO - Completed scraping batch 40836f25-4aec-4619-bcd5-17df07273134: 0/2 successful
+2025-07-25 11:04:53,890 - agents.web_scraper - INFO - Discovered 0 article URLs for Law360 Public
+2025-07-25 11:04:53,890 - agents.web_scraper - WARNING - No articles found for source: law360_backup
+2025-07-25 11:04:55,891 - __main__ - INFO - ✅ Scraped 0 articles from 4 sources
+2025-07-25 11:04:55,892 - __main__ - INFO - 🔍 Step 2: Extracting structured data from articles...
+2025-07-25 11:04:55,920 - agents.extractor - WARNING - LLM extraction failed: '\n        "case_names"'
+2025-07-25 11:04:55,921 - agents.extractor - INFO - Extraction completed for article 65e6b54d-efe4-4a12-be3d-5706258fa47f: confidence=0.60, completeness=0.20
+2025-07-25 11:04:55,924 - agents.database - ERROR - Error storing extraction: (builtins.AttributeError) 'str' object has no attribute 'hex'
+[SQL: SELECT articles.id, articles.url, articles.source_name, articles.content_hash, articles.title, articles.content, articles.excerpt, articles.author, articles.publish_date, articles.scraped_at, articles.created_at, articles.updated_at, articles.status_code, articles.user_agent, articles.response_time, articles.content_length, articles.language, articles.encoding, articles.processed, articles.extraction_completed, articles.quality_checked 
+FROM articles 
+WHERE articles.id = ?]
+[parameters: [{}]]
+2025-07-25 11:04:55,925 - agents.extractor - ERROR - Failed to process article 65e6b54d-efe4-4a12-be3d-5706258fa47f: (builtins.AttributeError) 'str' object has no attribute 'hex'
+[SQL: SELECT articles.id, articles.url, articles.source_name, articles.content_hash, articles.title, articles.content, articles.excerpt, articles.author, articles.publish_date, articles.scraped_at, articles.created_at, articles.updated_at, articles.status_code, articles.user_agent, articles.response_time, articles.content_length, articles.language, articles.encoding, articles.processed, articles.extraction_completed, articles.quality_checked 
+FROM articles 
+WHERE articles.id = ?]
+[parameters: [{}]]
+2025-07-25 11:04:55,928 - agents.extractor - WARNING - LLM extraction failed: '\n        "case_names"'
+2025-07-25 11:04:55,928 - agents.extractor - INFO - Extraction completed for article 6c7cd47b-8ea5-4c0e-9b69-f43bfd216d3e: confidence=0.50, completeness=0.00
+2025-07-25 11:04:55,929 - agents.database - ERROR - Error storing extraction: (builtins.AttributeError) 'str' object has no attribute 'hex'
+[SQL: SELECT articles.id, articles.url, articles.source_name, articles.content_hash, articles.title, articles.content, articles.excerpt, articles.author, articles.publish_date, articles.scraped_at, articles.created_at, articles.updated_at, articles.status_code, articles.user_agent, articles.response_time, articles.content_length, articles.language, articles.encoding, articles.processed, articles.extraction_completed, articles.quality_checked 
+FROM articles 
+WHERE articles.id = ?]
+[parameters: [{}]]
+2025-07-25 11:04:55,930 - agents.extractor - ERROR - Failed to process article 6c7cd47b-8ea5-4c0e-9b69-f43bfd216d3e: (builtins.AttributeError) 'str' object has no attribute 'hex'
+[SQL: SELECT articles.id, articles.url, articles.source_name, articles.content_hash, articles.title, articles.content, articles.excerpt, articles.author, articles.publish_date, articles.scraped_at, articles.created_at, articles.updated_at, articles.status_code, articles.user_agent, articles.response_time, articles.content_length, articles.language, articles.encoding, articles.processed, articles.extraction_completed, articles.quality_checked 
+FROM articles 
+WHERE articles.id = ?]
+[parameters: [{}]]
+2025-07-25 11:04:55,932 - agents.extractor - WARNING - LLM extraction failed: '\n        "case_names"'
+2025-07-25 11:04:55,933 - agents.extractor - INFO - Extraction completed for article a6fec2a5-30ca-46b1-b7e6-3b3a91033bea: confidence=0.60, completeness=0.20
+2025-07-25 11:04:55,934 - agents.database - ERROR - Error storing extraction: (builtins.AttributeError) 'str' object has no attribute 'hex'
+[SQL: SELECT articles.id, articles.url, articles.source_name, articles.content_hash, articles.title, articles.content, articles.excerpt, articles.author, articles.publish_date, articles.scraped_at, articles.created_at, articles.updated_at, articles.status_code, articles.user_agent, articles.response_time, articles.content_length, articles.language, articles.encoding, articles.processed, articles.extraction_completed, articles.quality_checked 
+FROM articles 
+WHERE articles.id = ?]
+[parameters: [{}]]
+2025-07-25 11:04:55,934 - agents.extractor - ERROR - Failed to process article a6fec2a5-30ca-46b1-b7e6-3b3a91033bea: (builtins.AttributeError) 'str' object has no attribute 'hex'
+[SQL: SELECT articles.id, articles.url, articles.source_name, articles.content_hash, articles.title, articles.content, articles.excerpt, articles.author, articles.publish_date, articles.scraped_at, articles.created_at, articles.updated_at, articles.status_code, articles.user_agent, articles.response_time, articles.content_length, articles.language, articles.encoding, articles.processed, articles.extraction_completed, articles.quality_checked 
+FROM articles 
+WHERE articles.id = ?]
+[parameters: [{}]]
+2025-07-25 11:04:55,934 - __main__ - INFO - ✅ Processed 0 articles for data extraction
+2025-07-25 11:04:55,934 - __main__ - WARNING - ⚠️ No articles were successfully processed
+2025-07-25 11:04:55,934 - __main__ - INFO - ⏱️ Workflow completed in 27.5 seconds
+2025-07-25 11:04:55,934 - __main__ - INFO - 🎯 Final Results:
+2025-07-25 11:04:55,934 - __main__ - INFO -   articles_scraped: 0
+2025-07-25 11:04:55,934 - __main__ - INFO -   articles_processed: 0
+2025-07-25 11:04:55,934 - __main__ - INFO -   articles_generated: 0
+2025-07-25 11:04:55,934 - __main__ - INFO -   articles_published: 0
+2025-07-25 11:04:55,934 - __main__ - INFO -   start_time: 2025-07-25 11:04:28.442145
+2025-07-25 11:04:55,934 - __main__ - INFO -   end_time: 2025-07-25 11:04:55.934332
+2025-07-25 11:04:55,934 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-25 11:04:55,934 - __main__ - INFO - ✅ Database connections closed
+2025-07-25 11:04:55,934 - __main__ - INFO - ✅ System shutdown completed
+2025-07-25 11:06:17,748 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-25 11:06:17,761 - agents.database - INFO - Database agent initialized successfully
+2025-07-25 11:06:17,761 - __main__ - INFO - ✅ Database agent initialized
+2025-07-25 11:06:17,761 - __main__ - INFO - ✅ System configuration verified
+2025-07-25 11:06:22,176 - tools.llm_client - INFO - LLM call successful: 15 tokens, $0.0000, 4.41s
+2025-07-25 11:06:22,176 - __main__ - INFO - ✅ LLM connectivity verified
+2025-07-25 11:06:22,176 - __main__ - INFO - 🎉 System initialization completed successfully
+2025-07-25 11:06:22,176 - __main__ - INFO - Running complete workflow
+2025-07-25 11:06:22,176 - __main__ - INFO - 🔄 Starting complete legal research workflow...
+2025-07-25 11:06:22,177 - __main__ - INFO - 📰 Step 1: Web scraping legal news sources...
+2025-07-25 11:06:24,129 - agents.web_scraper - INFO - Discovered 0 article URLs for Law.com
+2025-07-25 11:06:24,130 - agents.web_scraper - WARNING - No articles found for source: law_com
+2025-07-25 11:06:28,141 - agents.web_scraper - INFO - Discovered 2 article URLs for Legal Reader
+2025-07-25 11:06:35,730 - agents.web_scraper - INFO - Completed scraping batch a317a1b4-5e44-45db-aa66-864fe9663344: 0/2 successful
+2025-07-25 11:06:38,653 - agents.web_scraper - INFO - Discovered 2 article URLs for Above the Law
+2025-07-25 11:06:45,309 - agents.web_scraper - INFO - Completed scraping batch b1ff24bc-f2d3-45d2-bfdc-2d4f03c2831b: 0/2 successful
+2025-07-25 11:06:48,798 - agents.web_scraper - INFO - Discovered 0 article URLs for Law360 Public
+2025-07-25 11:06:48,799 - agents.web_scraper - WARNING - No articles found for source: law360_backup
+2025-07-25 11:06:50,800 - __main__ - INFO - ✅ Scraped 0 articles from 4 sources
+2025-07-25 11:06:50,800 - __main__ - INFO - 🔍 Step 2: Extracting structured data from articles...
+2025-07-25 11:06:50,830 - agents.extractor - WARNING - LLM extraction failed: '\n        "case_names"'
+2025-07-25 11:06:50,830 - agents.extractor - INFO - Extraction completed for article 65e6b54d-efe4-4a12-be3d-5706258fa47f: confidence=0.60, completeness=0.20
+2025-07-25 11:06:50,839 - agents.database - ERROR - Error storing extraction: (builtins.AttributeError) 'str' object has no attribute 'hex'
+[SQL: UPDATE articles SET updated_at=CURRENT_TIMESTAMP, processed=?, extraction_completed=? WHERE articles.id = ?]
+[parameters: [{}]]
+2025-07-25 11:06:50,839 - agents.extractor - ERROR - Failed to process article 65e6b54d-efe4-4a12-be3d-5706258fa47f: (builtins.AttributeError) 'str' object has no attribute 'hex'
+[SQL: UPDATE articles SET updated_at=CURRENT_TIMESTAMP, processed=?, extraction_completed=? WHERE articles.id = ?]
+[parameters: [{}]]
+2025-07-25 11:06:50,842 - agents.extractor - WARNING - LLM extraction failed: '\n        "case_names"'
+2025-07-25 11:06:50,842 - agents.extractor - INFO - Extraction completed for article 6c7cd47b-8ea5-4c0e-9b69-f43bfd216d3e: confidence=0.50, completeness=0.00
+2025-07-25 11:06:50,845 - agents.database - ERROR - Error storing extraction: (builtins.AttributeError) 'str' object has no attribute 'hex'
+[SQL: UPDATE articles SET updated_at=CURRENT_TIMESTAMP, processed=?, extraction_completed=? WHERE articles.id = ?]
+[parameters: [{}]]
+2025-07-25 11:06:50,845 - agents.extractor - ERROR - Failed to process article 6c7cd47b-8ea5-4c0e-9b69-f43bfd216d3e: (builtins.AttributeError) 'str' object has no attribute 'hex'
+[SQL: UPDATE articles SET updated_at=CURRENT_TIMESTAMP, processed=?, extraction_completed=? WHERE articles.id = ?]
+[parameters: [{}]]
+2025-07-25 11:06:50,847 - agents.extractor - WARNING - LLM extraction failed: '\n        "case_names"'
+2025-07-25 11:06:50,847 - agents.extractor - INFO - Extraction completed for article a6fec2a5-30ca-46b1-b7e6-3b3a91033bea: confidence=0.60, completeness=0.20
+2025-07-25 11:06:50,850 - agents.database - ERROR - Error storing extraction: (builtins.AttributeError) 'str' object has no attribute 'hex'
+[SQL: UPDATE articles SET updated_at=CURRENT_TIMESTAMP, processed=?, extraction_completed=? WHERE articles.id = ?]
+[parameters: [{}]]
+2025-07-25 11:06:50,850 - agents.extractor - ERROR - Failed to process article a6fec2a5-30ca-46b1-b7e6-3b3a91033bea: (builtins.AttributeError) 'str' object has no attribute 'hex'
+[SQL: UPDATE articles SET updated_at=CURRENT_TIMESTAMP, processed=?, extraction_completed=? WHERE articles.id = ?]
+[parameters: [{}]]
+2025-07-25 11:06:50,850 - __main__ - INFO - ✅ Processed 0 articles for data extraction
+2025-07-25 11:06:50,850 - __main__ - WARNING - ⚠️ No articles were successfully processed
+2025-07-25 11:06:50,850 - __main__ - INFO - ⏱️ Workflow completed in 28.7 seconds
+2025-07-25 11:06:50,850 - __main__ - INFO - 🎯 Final Results:
+2025-07-25 11:06:50,850 - __main__ - INFO -   articles_scraped: 0
+2025-07-25 11:06:50,850 - __main__ - INFO -   articles_processed: 0
+2025-07-25 11:06:50,850 - __main__ - INFO -   articles_generated: 0
+2025-07-25 11:06:50,850 - __main__ - INFO -   articles_published: 0
+2025-07-25 11:06:50,851 - __main__ - INFO -   start_time: 2025-07-25 11:06:22.176971
+2025-07-25 11:06:50,851 - __main__ - INFO -   end_time: 2025-07-25 11:06:50.850861
+2025-07-25 11:06:50,851 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-25 11:06:50,851 - __main__ - INFO - ✅ Database connections closed
+2025-07-25 11:06:50,851 - __main__ - INFO - ✅ System shutdown completed
+2025-07-25 11:07:12,142 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-25 11:07:12,155 - agents.database - INFO - Database agent initialized successfully
+2025-07-25 11:07:12,155 - __main__ - INFO - ✅ Database agent initialized
+2025-07-25 11:07:12,155 - __main__ - INFO - ✅ System configuration verified
+2025-07-25 11:07:16,594 - tools.llm_client - INFO - LLM call successful: 15 tokens, $0.0000, 4.44s
+2025-07-25 11:07:16,594 - __main__ - INFO - ✅ LLM connectivity verified
+2025-07-25 11:07:16,594 - __main__ - INFO - 🎉 System initialization completed successfully
+2025-07-25 11:07:16,594 - __main__ - INFO - Running complete workflow
+2025-07-25 11:07:16,594 - __main__ - INFO - 🔄 Starting complete legal research workflow...
+2025-07-25 11:07:16,594 - __main__ - INFO - 📰 Step 1: Web scraping legal news sources...
+2025-07-25 11:07:18,546 - agents.web_scraper - INFO - Discovered 0 article URLs for Law.com
+2025-07-25 11:07:18,546 - agents.web_scraper - WARNING - No articles found for source: law_com
+2025-07-25 11:07:22,616 - agents.web_scraper - INFO - Discovered 2 article URLs for Legal Reader
+2025-07-25 11:07:30,626 - agents.web_scraper - INFO - Completed scraping batch e79744cb-40d7-472e-898e-bd3e9ec64691: 0/2 successful
+2025-07-25 11:07:33,352 - agents.web_scraper - INFO - Discovered 2 article URLs for Above the Law
+2025-07-25 11:07:39,662 - agents.web_scraper - INFO - Completed scraping batch ca566edc-1486-4a11-95cc-3b779ae75aae: 0/2 successful
+2025-07-25 11:07:43,005 - agents.web_scraper - INFO - Discovered 0 article URLs for Law360 Public
+2025-07-25 11:07:43,006 - agents.web_scraper - WARNING - No articles found for source: law360_backup
+2025-07-25 11:07:45,007 - __main__ - INFO - ✅ Scraped 0 articles from 4 sources
+2025-07-25 11:07:45,008 - __main__ - INFO - 🔍 Step 2: Extracting structured data from articles...
+2025-07-25 11:07:45,036 - agents.extractor - WARNING - LLM extraction failed: '\n        "case_names"'
+2025-07-25 11:07:45,036 - agents.extractor - INFO - Extraction completed for article 65e6b54d-efe4-4a12-be3d-5706258fa47f: confidence=0.60, completeness=0.20
+2025-07-25 11:07:45,046 - agents.database - INFO - Stored extraction: 57fe5936-8bc0-42d5-91a5-784cd35290ed for article 65e6b54d-efe4-4a12-be3d-5706258fa47f
+2025-07-25 11:07:45,047 - agents.extractor - INFO - Processed article 65e6b54d-efe4-4a12-be3d-5706258fa47f -> extraction 57fe5936-8bc0-42d5-91a5-784cd35290ed
+2025-07-25 11:07:45,050 - agents.extractor - WARNING - LLM extraction failed: '\n        "case_names"'
+2025-07-25 11:07:45,050 - agents.extractor - INFO - Extraction completed for article 6c7cd47b-8ea5-4c0e-9b69-f43bfd216d3e: confidence=0.50, completeness=0.00
+2025-07-25 11:07:45,053 - agents.database - INFO - Stored extraction: f25951a3-c830-48b9-aa50-019c782fa921 for article 6c7cd47b-8ea5-4c0e-9b69-f43bfd216d3e
+2025-07-25 11:07:45,053 - agents.extractor - INFO - Processed article 6c7cd47b-8ea5-4c0e-9b69-f43bfd216d3e -> extraction f25951a3-c830-48b9-aa50-019c782fa921
+2025-07-25 11:07:45,055 - agents.extractor - WARNING - LLM extraction failed: '\n        "case_names"'
+2025-07-25 11:07:45,055 - agents.extractor - INFO - Extraction completed for article a6fec2a5-30ca-46b1-b7e6-3b3a91033bea: confidence=0.60, completeness=0.20
+2025-07-25 11:07:45,058 - agents.database - INFO - Stored extraction: 69971734-ac7b-4780-b2c9-915d9607873d for article a6fec2a5-30ca-46b1-b7e6-3b3a91033bea
+2025-07-25 11:07:45,058 - agents.extractor - INFO - Processed article a6fec2a5-30ca-46b1-b7e6-3b3a91033bea -> extraction 69971734-ac7b-4780-b2c9-915d9607873d
+2025-07-25 11:07:45,058 - __main__ - INFO - ✅ Processed 3 articles for data extraction
+2025-07-25 11:07:45,058 - __main__ - INFO - 📝 Step 3: Generating article summaries...
+2025-07-25 11:07:45,062 - __main__ - INFO - ✅ Generated 0 article summaries
+2025-07-25 11:07:45,062 - __main__ - WARNING - ⚠️ No summaries were generated
+2025-07-25 11:07:45,062 - __main__ - INFO - ⏱️ Workflow completed in 28.5 seconds
+2025-07-25 11:07:45,062 - __main__ - INFO - 🎯 Final Results:
+2025-07-25 11:07:45,062 - __main__ - INFO -   articles_scraped: 0
+2025-07-25 11:07:45,062 - __main__ - INFO -   articles_processed: 3
+2025-07-25 11:07:45,062 - __main__ - INFO -   articles_generated: 0
+2025-07-25 11:07:45,062 - __main__ - INFO -   articles_published: 0
+2025-07-25 11:07:45,062 - __main__ - INFO -   start_time: 2025-07-25 11:07:16.594553
+2025-07-25 11:07:45,062 - __main__ - INFO -   end_time: 2025-07-25 11:07:45.062301
+2025-07-25 11:07:45,062 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-25 11:07:45,062 - __main__ - INFO - ✅ Database connections closed
+2025-07-25 11:07:45,062 - __main__ - INFO - ✅ System shutdown completed
+2025-07-25 11:08:14,052 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-25 11:08:14,065 - agents.database - INFO - Database agent initialized successfully
+2025-07-25 11:08:14,065 - __main__ - INFO - ✅ Database agent initialized
+2025-07-25 11:08:14,065 - __main__ - INFO - ✅ System configuration verified
+2025-07-25 11:08:18,403 - tools.llm_client - INFO - LLM call successful: 15 tokens, $0.0000, 4.34s
+2025-07-25 11:08:18,404 - __main__ - INFO - ✅ LLM connectivity verified
+2025-07-25 11:08:18,404 - __main__ - INFO - 🎉 System initialization completed successfully
+2025-07-25 11:08:18,404 - __main__ - INFO - Running complete workflow
+2025-07-25 11:08:18,404 - __main__ - INFO - 🔄 Starting complete legal research workflow...
+2025-07-25 11:08:18,404 - __main__ - INFO - 📰 Step 1: Web scraping legal news sources...
+2025-07-25 11:08:20,546 - agents.web_scraper - INFO - Discovered 0 article URLs for Law.com
+2025-07-25 11:08:20,546 - agents.web_scraper - WARNING - No articles found for source: law_com
+2025-07-25 11:08:24,585 - agents.web_scraper - INFO - Discovered 2 article URLs for Legal Reader
+2025-07-25 11:08:33,821 - agents.web_scraper - INFO - Completed scraping batch 1dacc28e-fcf3-4793-aa00-99343cbcfae9: 0/2 successful
+2025-07-25 11:08:36,675 - agents.web_scraper - INFO - Discovered 2 article URLs for Above the Law
+2025-07-25 11:08:42,999 - agents.web_scraper - INFO - Completed scraping batch 4c935aeb-b6be-4b29-8523-aafcea278fd1: 0/2 successful
+2025-07-25 11:08:46,468 - agents.web_scraper - INFO - Discovered 0 article URLs for Law360 Public
+2025-07-25 11:08:46,468 - agents.web_scraper - WARNING - No articles found for source: law360_backup
+2025-07-25 11:08:48,469 - __main__ - INFO - ✅ Scraped 0 articles from 4 sources
+2025-07-25 11:08:48,470 - __main__ - INFO - 🔍 Step 2: Extracting structured data from articles...
+2025-07-25 11:08:48,487 - __main__ - INFO - ✅ Processed 0 articles for data extraction
+2025-07-25 11:08:48,487 - __main__ - WARNING - ⚠️ No articles were successfully processed
+2025-07-25 11:08:48,487 - __main__ - INFO - ⏱️ Workflow completed in 30.1 seconds
+2025-07-25 11:08:48,487 - __main__ - INFO - 🎯 Final Results:
+2025-07-25 11:08:48,487 - __main__ - INFO -   articles_scraped: 0
+2025-07-25 11:08:48,487 - __main__ - INFO -   articles_processed: 0
+2025-07-25 11:08:48,488 - __main__ - INFO -   articles_generated: 0
+2025-07-25 11:08:48,488 - __main__ - INFO -   articles_published: 0
+2025-07-25 11:08:48,488 - __main__ - INFO -   start_time: 2025-07-25 11:08:18.404521
+2025-07-25 11:08:48,488 - __main__ - INFO -   end_time: 2025-07-25 11:08:48.487820
+2025-07-25 11:08:48,488 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-25 11:08:48,488 - __main__ - INFO - ✅ Database connections closed
+2025-07-25 11:08:48,488 - __main__ - INFO - ✅ System shutdown completed
+2025-07-25 11:09:28,840 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-25 11:09:28,853 - agents.database - INFO - Database agent initialized successfully
+2025-07-25 11:09:28,853 - __main__ - INFO - ✅ Database agent initialized
+2025-07-25 11:09:28,853 - __main__ - INFO - ✅ System configuration verified
+2025-07-25 11:09:33,176 - tools.llm_client - INFO - LLM call successful: 15 tokens, $0.0000, 4.32s
+2025-07-25 11:09:33,177 - __main__ - INFO - ✅ LLM connectivity verified
+2025-07-25 11:09:33,177 - __main__ - INFO - 🎉 System initialization completed successfully
+2025-07-25 11:09:33,177 - __main__ - INFO - Running complete workflow
+2025-07-25 11:09:33,177 - __main__ - INFO - 🔄 Starting complete legal research workflow...
+2025-07-25 11:09:33,177 - __main__ - INFO - 📰 Step 1: Web scraping legal news sources...
+2025-07-25 11:09:35,027 - agents.web_scraper - INFO - Discovered 0 article URLs for Law.com
+2025-07-25 11:09:35,028 - agents.web_scraper - WARNING - No articles found for source: law_com
+2025-07-25 11:09:39,088 - agents.web_scraper - INFO - Discovered 2 article URLs for Legal Reader
+2025-07-25 11:09:46,736 - agents.web_scraper - INFO - Completed scraping batch 509eddb3-2b85-4834-b8fb-79b27473acaa: 0/2 successful
+2025-07-25 11:09:49,453 - agents.web_scraper - INFO - Discovered 2 article URLs for Above the Law
+2025-07-25 11:09:56,125 - agents.web_scraper - INFO - Completed scraping batch 1d1c95da-1613-4328-989b-00e07ecfaa1c: 0/2 successful
+2025-07-25 11:09:59,471 - agents.web_scraper - INFO - Discovered 0 article URLs for Law360 Public
+2025-07-25 11:09:59,471 - agents.web_scraper - WARNING - No articles found for source: law360_backup
+2025-07-25 11:10:01,473 - __main__ - INFO - ✅ Scraped 0 articles from 4 sources
+2025-07-25 11:10:01,474 - __main__ - INFO - 🔍 Step 2: Extracting structured data from articles...
+2025-07-25 11:10:01,489 - __main__ - INFO - ✅ Processed 0 articles for data extraction
+2025-07-25 11:10:01,489 - __main__ - INFO - No new articles processed, using existing processed articles...
+2025-07-25 11:10:01,499 - __main__ - INFO - Found 3 existing processed articles
+2025-07-25 11:10:01,499 - __main__ - INFO - 📝 Step 3: Generating article summaries...
+2025-07-25 11:10:01,503 - __main__ - INFO - ✅ Generated 0 article summaries
+2025-07-25 11:10:01,504 - __main__ - WARNING - ⚠️ No summaries were generated
+2025-07-25 11:10:01,504 - __main__ - INFO - ⏱️ Workflow completed in 28.3 seconds
+2025-07-25 11:10:01,504 - __main__ - INFO - 🎯 Final Results:
+2025-07-25 11:10:01,504 - __main__ - INFO -   articles_scraped: 0
+2025-07-25 11:10:01,504 - __main__ - INFO -   articles_processed: 0
+2025-07-25 11:10:01,504 - __main__ - INFO -   articles_generated: 0
+2025-07-25 11:10:01,504 - __main__ - INFO -   articles_published: 0
+2025-07-25 11:10:01,504 - __main__ - INFO -   start_time: 2025-07-25 11:09:33.177683
+2025-07-25 11:10:01,504 - __main__ - INFO -   end_time: 2025-07-25 11:10:01.504090
+2025-07-25 11:10:01,504 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-25 11:10:01,504 - __main__ - INFO - ✅ Database connections closed
+2025-07-25 11:10:01,504 - __main__ - INFO - ✅ System shutdown completed
+2025-07-25 11:10:28,437 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-25 11:10:28,451 - agents.database - INFO - Database agent initialized successfully
+2025-07-25 11:10:28,451 - __main__ - INFO - ✅ Database agent initialized
+2025-07-25 11:10:28,451 - __main__ - INFO - ✅ System configuration verified
+2025-07-25 11:10:32,370 - tools.llm_client - INFO - LLM call successful: 15 tokens, $0.0000, 3.92s
+2025-07-25 11:10:32,370 - __main__ - INFO - ✅ LLM connectivity verified
+2025-07-25 11:10:32,370 - __main__ - INFO - 🎉 System initialization completed successfully
+2025-07-25 11:10:32,370 - __main__ - INFO - Running complete workflow
+2025-07-25 11:10:32,370 - __main__ - INFO - 🔄 Starting complete legal research workflow...
+2025-07-25 11:10:32,370 - __main__ - INFO - 📰 Step 1: Web scraping legal news sources...
+2025-07-25 11:10:33,848 - agents.web_scraper - INFO - Discovered 0 article URLs for Law.com
+2025-07-25 11:10:33,849 - agents.web_scraper - WARNING - No articles found for source: law_com
+2025-07-25 11:10:37,948 - agents.web_scraper - INFO - Discovered 2 article URLs for Legal Reader
+2025-07-25 11:10:45,558 - agents.web_scraper - INFO - Completed scraping batch 2cc3f1e5-19f3-44a5-8426-d00b316cfde5: 0/2 successful
+2025-07-25 11:10:48,250 - agents.web_scraper - INFO - Discovered 2 article URLs for Above the Law
+2025-07-25 11:10:54,691 - agents.web_scraper - INFO - Completed scraping batch af0874fb-9bd8-4497-867d-da0358fde08e: 0/2 successful
+2025-07-25 11:10:58,075 - agents.web_scraper - INFO - Discovered 0 article URLs for Law360 Public
+2025-07-25 11:10:58,075 - agents.web_scraper - WARNING - No articles found for source: law360_backup
+2025-07-25 11:11:00,076 - __main__ - INFO - ✅ Scraped 0 articles from 4 sources
+2025-07-25 11:11:00,077 - __main__ - INFO - 🔍 Step 2: Extracting structured data from articles...
+2025-07-25 11:11:00,093 - __main__ - INFO - ✅ Processed 0 articles for data extraction
+2025-07-25 11:11:00,093 - __main__ - INFO - No new articles processed, using existing processed articles...
+2025-07-25 11:11:00,102 - __main__ - INFO - Found 3 existing processed articles
+2025-07-25 11:11:00,103 - __main__ - INFO - 📝 Step 3: Generating article summaries...
+2025-07-25 11:11:19,550 - tools.llm_client - INFO - LLM call successful: 789 tokens, $0.0015, 19.45s
+2025-07-25 11:11:19,553 - agents.summarizer - ERROR - Error summarizing article 65e6b54d-efe4-4a12-be3d-5706258fa47f: 1 validation error for ArticleSummary
+summary
+  String should have at most 200 characters [type=string_too_long, input_value='The Third Circuit Court ...iew if conflicts arise.', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.5/v/string_too_long
+2025-07-25 11:11:19,553 - agents.summarizer - ERROR - Failed to summarize article 65e6b54d-efe4-4a12-be3d-5706258fa47f: 1 validation error for ArticleSummary
+summary
+  String should have at most 200 characters [type=string_too_long, input_value='The Third Circuit Court ...iew if conflicts arise.', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.5/v/string_too_long
+2025-07-25 11:11:37,103 - tools.llm_client - INFO - LLM call successful: 776 tokens, $0.0015, 17.54s
+2025-07-25 11:11:37,103 - agents.summarizer - ERROR - Error summarizing article 6c7cd47b-8ea5-4c0e-9b69-f43bfd216d3e: 1 validation error for ArticleSummary
+summary
+  String should have at most 200 characters [type=string_too_long, input_value="New federal regulations ...ns' necessity and cost.", input_type=str]
+    For further information visit https://errors.pydantic.dev/2.5/v/string_too_long
+2025-07-25 11:11:37,104 - agents.summarizer - ERROR - Failed to summarize article 6c7cd47b-8ea5-4c0e-9b69-f43bfd216d3e: 1 validation error for ArticleSummary
+summary
+  String should have at most 200 characters [type=string_too_long, input_value="New federal regulations ...ns' necessity and cost.", input_type=str]
+    For further information visit https://errors.pydantic.dev/2.5/v/string_too_long
+2025-07-25 11:11:55,535 - tools.llm_client - INFO - LLM call successful: 775 tokens, $0.0015, 18.42s
+2025-07-25 11:11:55,537 - agents.summarizer - ERROR - Error summarizing article a6fec2a5-30ca-46b1-b7e6-3b3a91033bea: 1 validation error for ArticleSummary
+summary
+  String should have at most 200 characters [type=string_too_long, input_value='The Supreme Court issued...d local agencies alike.', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.5/v/string_too_long
+2025-07-25 11:11:55,537 - agents.summarizer - ERROR - Failed to summarize article a6fec2a5-30ca-46b1-b7e6-3b3a91033bea: 1 validation error for ArticleSummary
+summary
+  String should have at most 200 characters [type=string_too_long, input_value='The Supreme Court issued...d local agencies alike.', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.5/v/string_too_long
+2025-07-25 11:11:55,537 - __main__ - INFO - ✅ Generated 0 article summaries
+2025-07-25 11:11:55,537 - __main__ - WARNING - ⚠️ No summaries were generated
+2025-07-25 11:11:55,537 - __main__ - INFO - ⏱️ Workflow completed in 83.2 seconds
+2025-07-25 11:11:55,537 - __main__ - INFO - 🎯 Final Results:
+2025-07-25 11:11:55,538 - __main__ - INFO -   articles_scraped: 0
+2025-07-25 11:11:55,538 - __main__ - INFO -   articles_processed: 0
+2025-07-25 11:11:55,538 - __main__ - INFO -   articles_generated: 0
+2025-07-25 11:11:55,538 - __main__ - INFO -   articles_published: 0
+2025-07-25 11:11:55,538 - __main__ - INFO -   start_time: 2025-07-25 11:10:32.370592
+2025-07-25 11:11:55,538 - __main__ - INFO -   end_time: 2025-07-25 11:11:55.537736
+2025-07-25 11:11:55,538 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-25 11:11:55,539 - __main__ - INFO - ✅ Database connections closed
+2025-07-25 11:11:55,539 - __main__ - INFO - ✅ System shutdown completed
+2025-07-25 11:12:07,004 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-25 11:12:07,018 - agents.database - INFO - Database agent initialized successfully
+2025-07-25 11:12:07,018 - __main__ - INFO - ✅ Database agent initialized
+2025-07-25 11:12:07,018 - __main__ - INFO - ✅ System configuration verified
+2025-07-25 11:12:11,716 - tools.llm_client - INFO - LLM call successful: 15 tokens, $0.0000, 4.70s
+2025-07-25 11:12:11,716 - __main__ - INFO - ✅ LLM connectivity verified
+2025-07-25 11:12:11,716 - __main__ - INFO - 🎉 System initialization completed successfully
+2025-07-25 11:12:11,717 - __main__ - INFO - Running complete workflow
+2025-07-25 11:12:11,717 - __main__ - INFO - 🔄 Starting complete legal research workflow...
+2025-07-25 11:12:11,717 - __main__ - INFO - 📰 Step 1: Web scraping legal news sources...
+2025-07-25 11:12:13,909 - agents.web_scraper - INFO - Discovered 0 article URLs for Law.com
+2025-07-25 11:12:13,910 - agents.web_scraper - WARNING - No articles found for source: law_com
+2025-07-25 11:12:17,910 - agents.web_scraper - INFO - Discovered 2 article URLs for Legal Reader
+2025-07-25 11:12:27,518 - agents.web_scraper - INFO - Completed scraping batch e135187b-29ca-43e5-9884-2c21314a0f26: 0/2 successful
+2025-07-25 11:12:30,205 - agents.web_scraper - INFO - Discovered 2 article URLs for Above the Law
+2025-07-25 11:12:36,834 - agents.web_scraper - INFO - Completed scraping batch 1cf225d2-be00-4a62-93c7-69070358d204: 0/2 successful
+2025-07-25 11:12:40,265 - agents.web_scraper - INFO - Discovered 0 article URLs for Law360 Public
+2025-07-25 11:12:40,266 - agents.web_scraper - WARNING - No articles found for source: law360_backup
+2025-07-25 11:12:42,267 - __main__ - INFO - ✅ Scraped 0 articles from 4 sources
+2025-07-25 11:12:42,267 - __main__ - INFO - 🔍 Step 2: Extracting structured data from articles...
+2025-07-25 11:12:42,286 - __main__ - INFO - ✅ Processed 0 articles for data extraction
+2025-07-25 11:12:42,286 - __main__ - INFO - No new articles processed, using existing processed articles...
+2025-07-25 11:12:42,293 - __main__ - INFO - Found 3 existing processed articles
+2025-07-25 11:12:42,293 - __main__ - INFO - 📝 Step 3: Generating article summaries...
+2025-07-25 11:13:00,283 - tools.llm_client - INFO - LLM call successful: 788 tokens, $0.0015, 17.99s
+2025-07-25 11:13:00,284 - agents.summarizer - ERROR - Error summarizing article 65e6b54d-efe4-4a12-be3d-5706258fa47f: 1 validation error for ArticleSummary
+summary
+  String should have at most 400 characters [type=string_too_long, input_value='The Third Circuit Court ...iew if conflicts arise.', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.5/v/string_too_long
+2025-07-25 11:13:00,284 - agents.summarizer - ERROR - Failed to summarize article 65e6b54d-efe4-4a12-be3d-5706258fa47f: 1 validation error for ArticleSummary
+summary
+  String should have at most 400 characters [type=string_too_long, input_value='The Third Circuit Court ...iew if conflicts arise.', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.5/v/string_too_long
+2025-07-25 11:13:17,609 - tools.llm_client - INFO - LLM call successful: 784 tokens, $0.0015, 17.32s
+2025-07-25 11:13:17,613 - agents.summarizer - ERROR - Error summarizing article 6c7cd47b-8ea5-4c0e-9b69-f43bfd216d3e: 1 validation error for ArticleSummary
+summary
+  String should have at most 400 characters [type=string_too_long, input_value="New federal regulations ... and cost implications.", input_type=str]
+    For further information visit https://errors.pydantic.dev/2.5/v/string_too_long
+2025-07-25 11:13:17,614 - agents.summarizer - ERROR - Failed to summarize article 6c7cd47b-8ea5-4c0e-9b69-f43bfd216d3e: 1 validation error for ArticleSummary
+summary
+  String should have at most 400 characters [type=string_too_long, input_value="New federal regulations ... and cost implications.", input_type=str]
+    For further information visit https://errors.pydantic.dev/2.5/v/string_too_long
+2025-07-25 11:13:34,953 - tools.llm_client - INFO - LLM call successful: 779 tokens, $0.0015, 17.33s
+2025-07-25 11:13:34,954 - agents.summarizer - ERROR - Error summarizing article a6fec2a5-30ca-46b1-b7e6-3b3a91033bea: 1 validation error for ArticleSummary
+summary
+  String should have at most 400 characters [type=string_too_long, input_value='The Supreme Court issued...to digital information.', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.5/v/string_too_long
+2025-07-25 11:13:34,954 - agents.summarizer - ERROR - Failed to summarize article a6fec2a5-30ca-46b1-b7e6-3b3a91033bea: 1 validation error for ArticleSummary
+summary
+  String should have at most 400 characters [type=string_too_long, input_value='The Supreme Court issued...to digital information.', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.5/v/string_too_long
+2025-07-25 11:13:34,954 - __main__ - INFO - ✅ Generated 0 article summaries
+2025-07-25 11:13:34,955 - __main__ - WARNING - ⚠️ No summaries were generated
+2025-07-25 11:13:34,955 - __main__ - INFO - ⏱️ Workflow completed in 83.2 seconds
+2025-07-25 11:13:34,956 - __main__ - INFO - 🎯 Final Results:
+2025-07-25 11:13:34,956 - __main__ - INFO -   articles_scraped: 0
+2025-07-25 11:13:34,956 - __main__ - INFO -   articles_processed: 0
+2025-07-25 11:13:34,956 - __main__ - INFO -   articles_generated: 0
+2025-07-25 11:13:34,956 - __main__ - INFO -   articles_published: 0
+2025-07-25 11:13:34,956 - __main__ - INFO -   start_time: 2025-07-25 11:12:11.717171
+2025-07-25 11:13:34,956 - __main__ - INFO -   end_time: 2025-07-25 11:13:34.955277
+2025-07-25 11:13:34,956 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-25 11:13:34,959 - __main__ - INFO - ✅ Database connections closed
+2025-07-25 11:13:34,959 - __main__ - INFO - ✅ System shutdown completed
+2025-07-25 11:13:44,452 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-25 11:13:44,466 - agents.database - INFO - Database agent initialized successfully
+2025-07-25 11:13:44,466 - __main__ - INFO - ✅ Database agent initialized
+2025-07-25 11:13:44,466 - __main__ - INFO - ✅ System configuration verified
+2025-07-25 11:13:48,796 - tools.llm_client - INFO - LLM call successful: 15 tokens, $0.0000, 4.33s
+2025-07-25 11:13:48,796 - __main__ - INFO - ✅ LLM connectivity verified
+2025-07-25 11:13:48,796 - __main__ - INFO - 🎉 System initialization completed successfully
+2025-07-25 11:13:48,796 - __main__ - INFO - Running complete workflow
+2025-07-25 11:13:48,797 - __main__ - INFO - 🔄 Starting complete legal research workflow...
+2025-07-25 11:13:48,797 - __main__ - INFO - 📰 Step 1: Web scraping legal news sources...
+2025-07-25 11:13:50,482 - agents.web_scraper - INFO - Discovered 0 article URLs for Law.com
+2025-07-25 11:13:50,482 - agents.web_scraper - WARNING - No articles found for source: law_com
+2025-07-25 11:13:54,491 - agents.web_scraper - INFO - Discovered 2 article URLs for Legal Reader
+2025-07-25 11:14:02,058 - agents.web_scraper - INFO - Completed scraping batch fac2b07b-0264-47ed-9ccc-89c89b8d81ac: 0/2 successful
+2025-07-25 11:14:04,765 - agents.web_scraper - INFO - Discovered 2 article URLs for Above the Law
+2025-07-25 11:14:11,130 - agents.web_scraper - INFO - Completed scraping batch 945bf432-3028-4adc-81f0-b108b5592e70: 0/2 successful
+2025-07-25 11:14:14,578 - agents.web_scraper - INFO - Discovered 0 article URLs for Law360 Public
+2025-07-25 11:14:14,578 - agents.web_scraper - WARNING - No articles found for source: law360_backup
+2025-07-25 11:14:16,580 - __main__ - INFO - ✅ Scraped 0 articles from 4 sources
+2025-07-25 11:14:16,580 - __main__ - INFO - 🔍 Step 2: Extracting structured data from articles...
+2025-07-25 11:14:16,610 - __main__ - INFO - ✅ Processed 0 articles for data extraction
+2025-07-25 11:14:16,610 - __main__ - INFO - No new articles processed, using existing processed articles...
+2025-07-25 11:14:16,624 - __main__ - INFO - Found 3 existing processed articles
+2025-07-25 11:14:16,624 - __main__ - INFO - 📝 Step 3: Generating article summaries...
+2025-07-25 11:14:34,559 - tools.llm_client - INFO - LLM call successful: 791 tokens, $0.0015, 17.93s
+2025-07-25 11:14:34,562 - agents.summarizer - INFO - Summarization completed for article 65e6b54d-efe4-4a12-be3d-5706258fa47f: quality=0.81, relevance=0.78
+2025-07-25 11:14:52,150 - tools.llm_client - INFO - LLM call successful: 775 tokens, $0.0015, 16.57s
+2025-07-25 11:14:52,150 - agents.summarizer - INFO - Summarization completed for article 6c7cd47b-8ea5-4c0e-9b69-f43bfd216d3e: quality=0.76, relevance=0.89
+2025-07-25 11:15:10,142 - tools.llm_client - INFO - LLM call successful: 761 tokens, $0.0014, 16.98s
+2025-07-25 11:15:10,145 - agents.summarizer - WARNING - Summary quality below standards for article a6fec2a5-30ca-46b1-b7e6-3b3a91033bea, attempting improvement
+2025-07-25 11:15:27,885 - tools.llm_client - INFO - LLM call successful: 547 tokens, $0.0012, 17.74s
+2025-07-25 11:15:27,886 - agents.summarizer - INFO - Summary improved: 7.9 -> 8.2
+2025-07-25 11:15:27,886 - agents.summarizer - INFO - Summarization completed for article a6fec2a5-30ca-46b1-b7e6-3b3a91033bea: quality=0.82, relevance=0.00
+2025-07-25 11:15:28,888 - __main__ - INFO - ✅ Generated 3 article summaries
+2025-07-25 11:15:28,888 - __main__ - INFO - 🔗 Step 4: Analyzing connections between articles...
+2025-07-25 11:15:28,899 - agents.connector - WARNING - Insufficient articles for connection analysis: 0
+2025-07-25 11:15:28,899 - __main__ - INFO - ✅ Found 0 connections and 0 trends
+2025-07-25 11:15:28,899 - __main__ - INFO - ✍️ Step 5: Generating comprehensive legal blog article...
+2025-07-25 11:15:51,017 - tools.llm_client - INFO - LLM call successful: 755 tokens, $0.0016, 22.12s
+2025-07-25 11:16:28,586 - tools.llm_client - INFO - LLM call successful: 2085 tokens, $0.0039, 37.57s
+2025-07-25 11:16:36,302 - tools.llm_client - INFO - LLM call successful: 195 tokens, $0.0004, 7.71s
+2025-07-25 11:16:36,302 - agents.writer - ERROR - Error generating article content: 1 validation error for GeneratedArticle
+summary
+  String should have at most 200 characters [type=string_too_long, input_value='This article analyzes th... compliance. (50 words)', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.5/v/string_too_long
+2025-07-25 11:16:36,303 - agents.writer - ERROR - Error generating article: 1 validation error for GeneratedArticle
+summary
+  String should have at most 200 characters [type=string_too_long, input_value='This article analyzes th... compliance. (50 words)', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.5/v/string_too_long
+2025-07-25 11:16:36,303 - __main__ - ERROR - ❌ Workflow failed: 1 validation error for GeneratedArticle
+summary
+  String should have at most 200 characters [type=string_too_long, input_value='This article analyzes th... compliance. (50 words)', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.5/v/string_too_long
+2025-07-25 11:16:36,303 - __main__ - INFO - ⏱️ Workflow completed in 167.5 seconds
+2025-07-25 11:16:36,303 - __main__ - INFO - 🎯 Final Results:
+2025-07-25 11:16:36,303 - __main__ - INFO -   articles_scraped: 0
+2025-07-25 11:16:36,303 - __main__ - INFO -   articles_processed: 0
+2025-07-25 11:16:36,303 - __main__ - INFO -   articles_generated: 0
+2025-07-25 11:16:36,303 - __main__ - INFO -   articles_published: 0
+2025-07-25 11:16:36,304 - __main__ - INFO -   start_time: 2025-07-25 11:13:48.797093
+2025-07-25 11:16:36,304 - __main__ - INFO -   end_time: 2025-07-25 11:16:36.303300
+2025-07-25 11:16:36,304 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-25 11:16:36,304 - __main__ - INFO - ✅ Database connections closed
+2025-07-25 11:16:36,304 - __main__ - INFO - ✅ System shutdown completed
+2025-07-25 11:16:59,068 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-25 11:16:59,083 - agents.database - INFO - Database agent initialized successfully
+2025-07-25 11:16:59,083 - __main__ - INFO - ✅ Database agent initialized
+2025-07-25 11:16:59,083 - __main__ - INFO - ✅ System configuration verified
+2025-07-25 11:17:04,119 - tools.llm_client - INFO - LLM call successful: 15 tokens, $0.0000, 5.04s
+2025-07-25 11:17:04,120 - __main__ - INFO - ✅ LLM connectivity verified
+2025-07-25 11:17:04,120 - __main__ - INFO - 🎉 System initialization completed successfully
+2025-07-25 11:17:04,120 - __main__ - INFO - Running complete workflow
+2025-07-25 11:17:04,120 - __main__ - INFO - 🔄 Starting complete legal research workflow...
+2025-07-25 11:17:04,120 - __main__ - INFO - 📰 Step 1: Web scraping legal news sources...
+2025-07-25 11:17:06,234 - agents.web_scraper - INFO - Discovered 0 article URLs for Law.com
+2025-07-25 11:17:06,234 - agents.web_scraper - WARNING - No articles found for source: law_com
+2025-07-25 11:17:10,345 - agents.web_scraper - INFO - Discovered 2 article URLs for Legal Reader
+2025-07-25 11:17:18,110 - agents.web_scraper - INFO - Completed scraping batch f09dd458-d895-433f-8053-b970a3665f7a: 0/2 successful
+2025-07-25 11:17:20,832 - agents.web_scraper - INFO - Discovered 2 article URLs for Above the Law
+2025-07-25 11:17:27,484 - agents.web_scraper - INFO - Completed scraping batch 8fd34376-6bbb-4ea8-b510-b726e87873b1: 0/2 successful
+2025-07-25 11:17:30,928 - agents.web_scraper - INFO - Discovered 0 article URLs for Law360 Public
+2025-07-25 11:17:30,928 - agents.web_scraper - WARNING - No articles found for source: law360_backup
+2025-07-25 11:17:32,930 - __main__ - INFO - ✅ Scraped 0 articles from 4 sources
+2025-07-25 11:17:32,930 - __main__ - INFO - 🔍 Step 2: Extracting structured data from articles...
+2025-07-25 11:17:32,944 - __main__ - INFO - ✅ Processed 0 articles for data extraction
+2025-07-25 11:17:32,944 - __main__ - INFO - No new articles processed, using existing processed articles...
+2025-07-25 11:17:32,955 - __main__ - INFO - Found 3 existing processed articles
+2025-07-25 11:17:32,955 - __main__ - INFO - 📝 Step 3: Generating article summaries...
+2025-07-25 11:17:50,698 - tools.llm_client - INFO - LLM call successful: 791 tokens, $0.0015, 17.74s
+2025-07-25 11:17:50,701 - agents.summarizer - WARNING - Summary quality below standards for article 65e6b54d-efe4-4a12-be3d-5706258fa47f, attempting improvement
+2025-07-25 11:18:05,963 - tools.llm_client - INFO - LLM call successful: 536 tokens, $0.0011, 15.26s
+2025-07-25 11:18:05,965 - agents.summarizer - WARNING - Summary improvement attempt did not yield better quality
+2025-07-25 11:18:05,965 - agents.summarizer - INFO - Summarization completed for article 65e6b54d-efe4-4a12-be3d-5706258fa47f: quality=0.81, relevance=0.80
+2025-07-25 11:18:22,855 - tools.llm_client - INFO - LLM call successful: 769 tokens, $0.0015, 15.87s
+2025-07-25 11:18:22,856 - agents.summarizer - INFO - Summarization completed for article 6c7cd47b-8ea5-4c0e-9b69-f43bfd216d3e: quality=0.76, relevance=0.88
+2025-07-25 11:18:39,141 - tools.llm_client - INFO - LLM call successful: 757 tokens, $0.0014, 15.26s
+2025-07-25 11:18:39,144 - agents.summarizer - WARNING - Summary quality below standards for article a6fec2a5-30ca-46b1-b7e6-3b3a91033bea, attempting improvement
+2025-07-25 11:18:56,730 - tools.llm_client - INFO - LLM call successful: 569 tokens, $0.0012, 17.59s
+2025-07-25 11:18:56,731 - agents.summarizer - INFO - Summary improved: 7.6 -> 8.1
+2025-07-25 11:18:56,731 - agents.summarizer - INFO - Summarization completed for article a6fec2a5-30ca-46b1-b7e6-3b3a91033bea: quality=0.81, relevance=0.00
+2025-07-25 11:18:57,733 - __main__ - INFO - ✅ Generated 3 article summaries
+2025-07-25 11:18:57,733 - __main__ - INFO - 🔗 Step 4: Analyzing connections between articles...
+2025-07-25 11:18:57,748 - agents.connector - WARNING - Insufficient articles for connection analysis: 0
+2025-07-25 11:18:57,749 - __main__ - INFO - ✅ Found 0 connections and 0 trends
+2025-07-25 11:18:57,749 - __main__ - INFO - ✍️ Step 5: Generating comprehensive legal blog article...
+2025-07-25 11:19:19,447 - tools.llm_client - INFO - LLM call successful: 761 tokens, $0.0016, 21.70s
+2025-07-25 11:20:03,633 - tools.llm_client - INFO - LLM call successful: 2210 tokens, $0.0043, 44.18s
+2025-07-25 11:20:12,370 - tools.llm_client - INFO - LLM call successful: 213 tokens, $0.0004, 8.74s
+2025-07-25 11:20:59,922 - tools.llm_client - INFO - LLM call successful: 1905 tokens, $0.0040, 47.54s
+2025-07-25 11:20:59,927 - agents.writer - INFO - Article generated: 604 words, quality=0.60, originality=0.77
+2025-07-25 11:20:59,927 - __main__ - INFO - ✅ Generated article: 'Key Legal Updates on Digital Privacy, ADA Accommodations, and Compliance' (604 words)
+2025-07-25 11:20:59,927 - __main__ - INFO - 🔍 Step 6: Quality assurance validation...
+2025-07-25 11:20:59,927 - agents.quality_assurance - INFO - Starting quality assurance validation for article c7dc77d3-2397-41db-a4f8-15b268c44bfb
+2025-07-25 11:20:59,944 - agents.quality_assurance - INFO - Plagiarism check completed: plagiarized=False, similarity=0.00
+2025-07-25 11:20:59,944 - agents.quality_assurance - WARNING - LLM quality assessment failed: '\n        "overall_score"'
+2025-07-25 11:20:59,944 - agents.quality_assurance - INFO - Quality assurance completed for article c7dc77d3-2397-41db-a4f8-15b268c44bfb: passed=False, score=7.7
+2025-07-25 11:20:59,945 - __main__ - INFO - ✅ Quality validation completed: passed=False, score=7.7
+2025-07-25 11:20:59,945 - __main__ - WARNING - ⚠️ Article failed quality validation: []
+2025-07-25 11:20:59,945 - __main__ - INFO - 📊 Step 8: Generating system health report and statistics...
+2025-07-25 11:20:59,945 - agents.supervisor - INFO - Generating system health report...
+2025-07-25 11:21:00,962 - agents.supervisor - WARNING - Generated 1 system alerts
+2025-07-25 11:21:00,962 - agents.supervisor - ERROR - CRITICAL ALERT: 3 agents in critical state
+2025-07-25 11:21:00,962 - agents.supervisor - INFO - Health report generated: critical status, 0/3 agents healthy
+2025-07-25 11:21:00,962 - __main__ - INFO - 🏥 System health: critical, 0/3 agents healthy
+2025-07-25 11:21:00,966 - __main__ - INFO - 📈 Workflow Statistics:
+2025-07-25 11:21:00,967 - __main__ - INFO -   • Articles scraped: 0
+2025-07-25 11:21:00,967 - __main__ - INFO -   • Articles processed: 0
+2025-07-25 11:21:00,967 - __main__ - INFO -   • Summaries generated: 3
+2025-07-25 11:21:00,967 - __main__ - INFO -   • Connections found: 0
+2025-07-25 11:21:00,967 - __main__ - INFO -   • Trends identified: 0
+2025-07-25 11:21:00,967 - __main__ - INFO -   • Articles generated: 1
+2025-07-25 11:21:00,967 - __main__ - INFO -   • Articles approved: 0
+2025-07-25 11:21:00,967 - __main__ - INFO -   • Database total articles: 3
+2025-07-25 11:21:00,971 - __main__ - INFO - ⏱️ Workflow completed in 236.9 seconds
+2025-07-25 11:21:00,971 - __main__ - INFO - 🎯 Final Results:
+2025-07-25 11:21:00,971 - __main__ - INFO -   articles_scraped: 0
+2025-07-25 11:21:00,971 - __main__ - INFO -   articles_processed: 0
+2025-07-25 11:21:00,972 - __main__ - INFO -   articles_generated: 1
+2025-07-25 11:21:00,972 - __main__ - INFO -   articles_published: 0
+2025-07-25 11:21:00,972 - __main__ - INFO -   start_time: 2025-07-25 11:17:04.120714
+2025-07-25 11:21:00,972 - __main__ - INFO -   end_time: None
+2025-07-25 11:21:00,972 - __main__ - INFO -   validation_result:
+2025-07-25 11:21:00,972 - __main__ - INFO -     validation_id: val_20250725_112059_c7dc77d3
+2025-07-25 11:21:00,972 - __main__ - INFO -     article_id: c7dc77d3-2397-41db-a4f8-15b268c44bfb
+2025-07-25 11:21:00,972 - __main__ - INFO -     passed: False
+2025-07-25 11:21:00,972 - __main__ - INFO -     overall_score: 7.693046357615895
+2025-07-25 11:21:00,972 - __main__ - INFO -     confidence: 0.85
+2025-07-25 11:21:00,972 - __main__ - INFO -     word_count_compliant: True
+2025-07-25 11:21:00,972 - __main__ - INFO -     originality_score: 1.0
+2025-07-25 11:21:00,972 - __main__ - INFO -     legal_quality_score: 8.5
+2025-07-25 11:21:00,972 - __main__ - INFO -     readability_score: 5.0
+2025-07-25 11:21:00,972 - __main__ - INFO -     factual_accuracy_score: 8.0
+2025-07-25 11:21:00,972 - __main__ - INFO -     plagiarism_detected: False
+2025-07-25 11:21:00,972 - __main__ - INFO -     inappropriate_content: False
+2025-07-25 11:21:00,972 - __main__ - INFO -     legal_terminology_adequate: True
+2025-07-25 11:21:00,972 - __main__ - INFO -     structure_adequate: True
+2025-07-25 11:21:00,972 - __main__ - INFO -     critical_issues: []
+2025-07-25 11:21:00,972 - __main__ - INFO -     warnings: ['Readability could be improved']
+2025-07-25 11:21:00,972 - __main__ - INFO -     recommendations: ['Add more specific legal analysis and case discussion', 'Simplify complex words where possible', 'Add transition words to improve flow', 'Add a clear introduction']
+2025-07-25 11:21:00,973 - __main__ - INFO -     validated_at: 2025-07-25 11:20:59.933018
+2025-07-25 11:21:00,973 - __main__ - INFO -     validator_version: 1.0
+2025-07-25 11:21:00,973 - __main__ - INFO -   generated_article:
+2025-07-25 11:21:00,973 - __main__ - INFO -     title: Key Legal Updates on Digital Privacy, ADA Accommodations, and Compliance
+2025-07-25 11:21:00,973 - __main__ - INFO -     word_count: 604
+2025-07-25 11:21:00,973 - __main__ - INFO -     quality_score: 0.6018046357615894
+2025-07-25 11:21:00,973 - __main__ - INFO -     originality_score: 0.7715231788079471
+2025-07-25 11:21:00,973 - __main__ - INFO -   connections_summary:
+2025-07-25 11:21:00,973 - __main__ - INFO -     connection_count: 0
+2025-07-25 11:21:00,973 - __main__ - INFO -     cluster_count: 0
+2025-07-25 11:21:00,973 - __main__ - INFO -     trend_count: 0
+2025-07-25 11:21:00,973 - __main__ - INFO -   database_stats:
+2025-07-25 11:21:00,973 - __main__ - INFO -     total_articles: 3
+2025-07-25 11:21:00,973 - __main__ - INFO -     processed_articles: 3
+2025-07-25 11:21:00,973 - __main__ - INFO -     total_extractions: 3
+2025-07-25 11:21:00,973 - __main__ - INFO -     total_quality_assessments: 0
+2025-07-25 11:21:00,973 - __main__ - INFO -     approved_articles: 0
+2025-07-25 11:21:00,973 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-25 11:21:00,973 - __main__ - INFO - ✅ Database connections closed
+2025-07-25 11:21:00,973 - __main__ - INFO - ✅ System shutdown completed
+2025-07-25 11:25:45,501 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-25 11:25:45,516 - agents.database - INFO - Database agent initialized successfully
+2025-07-25 11:25:45,516 - __main__ - INFO - ✅ Database agent initialized
+2025-07-25 11:25:45,516 - __main__ - INFO - ✅ System configuration verified
+2025-07-25 11:25:50,855 - tools.llm_client - INFO - LLM call successful: 15 tokens, $0.0000, 5.34s
+2025-07-25 11:25:50,856 - __main__ - INFO - ✅ LLM connectivity verified
+2025-07-25 11:25:50,856 - __main__ - INFO - 🎉 System initialization completed successfully
+2025-07-25 11:25:50,856 - __main__ - INFO - Running complete workflow
+2025-07-25 11:25:50,856 - __main__ - INFO - 🔄 Starting complete legal research workflow...
+2025-07-25 11:25:50,856 - __main__ - INFO - 📰 Step 1: Web scraping legal news sources...
+2025-07-25 11:25:51,518 - agents.web_scraper - INFO - Discovered 2 article URLs for Reuters Legal
+2025-07-25 11:26:01,023 - agents.web_scraper - INFO - Completed scraping batch be4d0bdf-9b2c-4ed6-b961-e007d24e436a: 0/2 successful
+2025-07-25 11:26:03,461 - agents.web_scraper - INFO - Discovered 2 article URLs for Reuters Government
+2025-07-25 11:26:10,335 - agents.web_scraper - INFO - Completed scraping batch 19aac241-6537-48fc-8642-50cb6ab4621c: 0/2 successful
+2025-07-25 11:26:14,426 - agents.web_scraper - INFO - Discovered 2 article URLs for ABA Journal
+2025-07-25 11:26:22,763 - agents.web_scraper - INFO - Completed scraping batch 4215286b-2bad-4a72-b40f-5f0bdfb23cf0: 0/2 successful
+2025-07-25 11:26:26,317 - agents.web_scraper - INFO - Discovered 2 article URLs for Law360
+2025-07-25 11:26:37,450 - agents.web_scraper - INFO - Completed scraping batch 90a701de-4ee3-4d4a-ae09-6009c1dc03a2: 0/2 successful
+2025-07-25 11:26:40,190 - agents.web_scraper - INFO - Discovered 2 article URLs for SCOTUSblog
+2025-07-25 11:26:45,529 - agents.web_scraper - INFO - Completed scraping batch ca81d5fa-7f7d-408b-9e85-6acfeabc34f7: 0/2 successful
+2025-07-25 11:26:49,812 - agents.web_scraper - INFO - Discovered 2 article URLs for U.S. Courts
+2025-07-25 11:26:55,231 - agents.web_scraper - INFO - Completed scraping batch f4d93b3e-cf9f-43e7-ae13-167cb90b483e: 0/2 successful
+2025-07-25 11:26:59,675 - agents.web_scraper - INFO - Discovered 0 article URLs for WIRED Law
+2025-07-25 11:26:59,676 - agents.web_scraper - WARNING - No articles found for source: wired_law
+2025-07-25 11:27:03,858 - agents.web_scraper - INFO - Discovered 0 article URLs for WIRED Tech Policy
+2025-07-25 11:27:03,859 - agents.web_scraper - WARNING - No articles found for source: wired_tech_policy
+2025-07-25 11:27:06,237 - agents.web_scraper - INFO - Discovered 0 article URLs for Axios
+2025-07-25 11:27:06,237 - agents.web_scraper - WARNING - No articles found for source: axios
+2025-07-25 11:27:09,145 - agents.web_scraper - INFO - Discovered 2 article URLs for Justia
+2025-07-25 11:27:15,760 - agents.web_scraper - INFO - Completed scraping batch 75c044a5-5efe-4668-9666-d8fe2ae2517f: 0/2 successful
+2025-07-25 11:27:18,965 - agents.web_scraper - INFO - Discovered 2 article URLs for Criminal Law Library Blog
+2025-07-25 11:27:23,871 - agents.web_scraper - INFO - Completed scraping batch b56275c0-8c42-474b-af7e-1cb2f6faecbe: 0/2 successful
+2025-07-25 11:27:28,685 - agents.web_scraper - INFO - Discovered 2 article URLs for JD Supra
+2025-07-25 11:27:39,333 - agents.web_scraper - INFO - Completed scraping batch 31549df9-89e7-4d78-9b53-f69444068ef2: 0/2 successful
+2025-07-25 11:27:42,534 - agents.web_scraper - INFO - Discovered 0 article URLs for Holland & Knight
+2025-07-25 11:27:42,534 - agents.web_scraper - WARNING - No articles found for source: hk_law
+2025-07-25 11:27:46,571 - agents.web_scraper - INFO - Discovered 2 article URLs for Legal Reader
+2025-07-25 11:27:54,870 - agents.web_scraper - INFO - Completed scraping batch 570b90cb-c3f2-4b15-8839-46d18b469654: 0/2 successful
+2025-07-25 11:27:57,622 - agents.web_scraper - INFO - Discovered 2 article URLs for Above the Law
+2025-07-25 11:28:04,299 - agents.web_scraper - INFO - Completed scraping batch 60ad5056-7113-47c9-900c-956c68ee04b8: 0/2 successful
+2025-07-25 11:28:06,301 - __main__ - INFO - ✅ Scraped 0 articles from 15 sources
+2025-07-25 11:28:06,301 - __main__ - INFO - 🔍 Step 2: Extracting structured data from articles...
+2025-07-25 11:28:06,334 - __main__ - INFO - ✅ Processed 0 articles for data extraction
+2025-07-25 11:28:06,334 - __main__ - INFO - No new articles processed, using existing processed articles...
+2025-07-25 11:28:06,343 - __main__ - INFO - Found 3 existing processed articles
+2025-07-25 11:28:06,344 - __main__ - INFO - 📝 Step 3: Generating article summaries...
+2025-07-25 11:28:23,215 - tools.llm_client - INFO - LLM call successful: 788 tokens, $0.0015, 16.87s
+2025-07-25 11:28:23,218 - agents.summarizer - INFO - Summarization completed for article 65e6b54d-efe4-4a12-be3d-5706258fa47f: quality=0.81, relevance=0.78
+2025-07-25 11:28:40,420 - tools.llm_client - INFO - LLM call successful: 764 tokens, $0.0015, 16.18s
+2025-07-25 11:28:40,422 - agents.summarizer - INFO - Summarization completed for article 6c7cd47b-8ea5-4c0e-9b69-f43bfd216d3e: quality=0.76, relevance=0.90
+2025-07-25 11:28:56,951 - tools.llm_client - INFO - LLM call successful: 744 tokens, $0.0014, 15.52s
+2025-07-25 11:28:56,960 - agents.summarizer - WARNING - Summary quality below standards for article a6fec2a5-30ca-46b1-b7e6-3b3a91033bea, attempting improvement
+2025-07-25 11:29:14,474 - tools.llm_client - INFO - LLM call successful: 557 tokens, $0.0012, 17.51s
+2025-07-25 11:29:14,476 - agents.summarizer - INFO - Summary improved: 7.6 -> 8.0
+2025-07-25 11:29:14,476 - agents.summarizer - INFO - Summarization completed for article a6fec2a5-30ca-46b1-b7e6-3b3a91033bea: quality=0.80, relevance=0.00
+2025-07-25 11:29:15,477 - __main__ - INFO - ✅ Generated 3 article summaries
+2025-07-25 11:29:15,477 - __main__ - INFO - 🔗 Step 4: Analyzing connections between articles...
+2025-07-25 11:29:15,484 - agents.connector - WARNING - Insufficient articles for connection analysis: 0
+2025-07-25 11:29:15,485 - __main__ - INFO - ✅ Found 0 connections and 0 trends
+2025-07-25 11:29:15,485 - __main__ - INFO - ✍️ Step 5: Generating comprehensive legal blog article...
+2025-07-25 11:29:38,490 - tools.llm_client - INFO - LLM call successful: 787 tokens, $0.0017, 23.00s
+2025-07-25 11:30:17,343 - tools.llm_client - INFO - LLM call successful: 2134 tokens, $0.0040, 38.85s
+2025-07-25 11:30:25,185 - tools.llm_client - INFO - LLM call successful: 201 tokens, $0.0004, 7.84s
+2025-07-25 11:31:06,341 - tools.llm_client - INFO - LLM call successful: 1655 tokens, $0.0035, 41.15s
+2025-07-25 11:31:06,346 - agents.writer - INFO - Article generated: 580 words, quality=0.62, originality=0.76
+2025-07-25 11:31:06,346 - __main__ - INFO - ✅ Generated article: 'Landmark Legal Developments: Digital Privacy, Corporate Transparency, and Workplace Accommodations' (580 words)
+2025-07-25 11:31:06,346 - __main__ - INFO - 🔍 Step 6: Quality assurance validation...
+2025-07-25 11:31:06,346 - agents.quality_assurance - INFO - Starting quality assurance validation for article e95d1fde-5623-4641-b8be-f789e32bad4e
+2025-07-25 11:31:06,369 - agents.quality_assurance - INFO - Plagiarism check completed: plagiarized=False, similarity=0.00
+2025-07-25 11:31:06,370 - agents.quality_assurance - WARNING - LLM quality assessment failed: '\n        "overall_score"'
+2025-07-25 11:31:06,370 - agents.quality_assurance - INFO - Quality assurance completed for article e95d1fde-5623-4641-b8be-f789e32bad4e: passed=False, score=7.7
+2025-07-25 11:31:06,370 - __main__ - INFO - ✅ Quality validation completed: passed=False, score=7.7
+2025-07-25 11:31:06,370 - __main__ - WARNING - ⚠️ Article failed quality validation: []
+2025-07-25 11:31:06,370 - __main__ - INFO - 📊 Step 8: Generating system health report and statistics...
+2025-07-25 11:31:06,370 - agents.supervisor - INFO - Generating system health report...
+2025-07-25 11:31:07,394 - agents.supervisor - WARNING - Generated 1 system alerts
+2025-07-25 11:31:07,394 - agents.supervisor - ERROR - CRITICAL ALERT: 3 agents in critical state
+2025-07-25 11:31:07,394 - agents.supervisor - INFO - Health report generated: critical status, 0/3 agents healthy
+2025-07-25 11:31:07,394 - __main__ - INFO - 🏥 System health: critical, 0/3 agents healthy
+2025-07-25 11:31:07,399 - __main__ - INFO - 📈 Workflow Statistics:
+2025-07-25 11:31:07,399 - __main__ - INFO -   • Articles scraped: 0
+2025-07-25 11:31:07,399 - __main__ - INFO -   • Articles processed: 0
+2025-07-25 11:31:07,399 - __main__ - INFO -   • Summaries generated: 3
+2025-07-25 11:31:07,399 - __main__ - INFO -   • Connections found: 0
+2025-07-25 11:31:07,399 - __main__ - INFO -   • Trends identified: 0
+2025-07-25 11:31:07,399 - __main__ - INFO -   • Articles generated: 1
+2025-07-25 11:31:07,399 - __main__ - INFO -   • Articles approved: 0
+2025-07-25 11:31:07,399 - __main__ - INFO -   • Database total articles: 3
+2025-07-25 11:31:07,409 - __main__ - INFO - ⏱️ Workflow completed in 316.6 seconds
+2025-07-25 11:31:07,410 - __main__ - INFO - 🎯 Final Results:
+2025-07-25 11:31:07,410 - __main__ - INFO -   articles_scraped: 0
+2025-07-25 11:31:07,410 - __main__ - INFO -   articles_processed: 0
+2025-07-25 11:31:07,410 - __main__ - INFO -   articles_generated: 1
+2025-07-25 11:31:07,410 - __main__ - INFO -   articles_published: 0
+2025-07-25 11:31:07,410 - __main__ - INFO -   start_time: 2025-07-25 11:25:50.856767
+2025-07-25 11:31:07,410 - __main__ - INFO -   end_time: None
+2025-07-25 11:31:07,410 - __main__ - INFO -   validation_result:
+2025-07-25 11:31:07,410 - __main__ - INFO -     validation_id: val_20250725_113106_e95d1fde
+2025-07-25 11:31:07,410 - __main__ - INFO -     article_id: e95d1fde-5623-4641-b8be-f789e32bad4e
+2025-07-25 11:31:07,410 - __main__ - INFO -     passed: False
+2025-07-25 11:31:07,410 - __main__ - INFO -     overall_score: 7.661724137931035
+2025-07-25 11:31:07,410 - __main__ - INFO -     confidence: 0.85
+2025-07-25 11:31:07,410 - __main__ - INFO -     word_count_compliant: True
+2025-07-25 11:31:07,410 - __main__ - INFO -     originality_score: 1.0
+2025-07-25 11:31:07,410 - __main__ - INFO -     legal_quality_score: 8.5
+2025-07-25 11:31:07,410 - __main__ - INFO -     readability_score: 5.0
+2025-07-25 11:31:07,410 - __main__ - INFO -     factual_accuracy_score: 8.0
+2025-07-25 11:31:07,410 - __main__ - INFO -     plagiarism_detected: False
+2025-07-25 11:31:07,410 - __main__ - INFO -     inappropriate_content: False
+2025-07-25 11:31:07,410 - __main__ - INFO -     legal_terminology_adequate: True
+2025-07-25 11:31:07,410 - __main__ - INFO -     structure_adequate: True
+2025-07-25 11:31:07,410 - __main__ - INFO -     critical_issues: []
+2025-07-25 11:31:07,410 - __main__ - INFO -     warnings: ['Readability could be improved']
+2025-07-25 11:31:07,410 - __main__ - INFO -     recommendations: ['Add more specific legal analysis and case discussion', 'Simplify complex words where possible', 'Add transition words to improve flow', 'Add a clear introduction']
+2025-07-25 11:31:07,410 - __main__ - INFO -     validated_at: 2025-07-25 11:31:06.352349
+2025-07-25 11:31:07,411 - __main__ - INFO -     validator_version: 1.0
+2025-07-25 11:31:07,411 - __main__ - INFO -   generated_article:
+2025-07-25 11:31:07,411 - __main__ - INFO -     title: Landmark Legal Developments: Digital Privacy, Corporate Transparency, and Workplace Accommodations
+2025-07-25 11:31:07,411 - __main__ - INFO -     word_count: 580
+2025-07-25 11:31:07,411 - __main__ - INFO -     quality_score: 0.619396551724138
+2025-07-25 11:31:07,411 - __main__ - INFO -     originality_score: 0.7558620689655172
+2025-07-25 11:31:07,411 - __main__ - INFO -   connections_summary:
+2025-07-25 11:31:07,411 - __main__ - INFO -     connection_count: 0
+2025-07-25 11:31:07,411 - __main__ - INFO -     cluster_count: 0
+2025-07-25 11:31:07,411 - __main__ - INFO -     trend_count: 0
+2025-07-25 11:31:07,411 - __main__ - INFO -   database_stats:
+2025-07-25 11:31:07,411 - __main__ - INFO -     total_articles: 3
+2025-07-25 11:31:07,411 - __main__ - INFO -     processed_articles: 3
+2025-07-25 11:31:07,411 - __main__ - INFO -     total_extractions: 3
+2025-07-25 11:31:07,411 - __main__ - INFO -     total_quality_assessments: 0
+2025-07-25 11:31:07,411 - __main__ - INFO -     approved_articles: 0
+2025-07-25 11:31:07,411 - __main__ - INFO - 🛑 Shutting down Multi-Agent Legal Research System...
+2025-07-25 11:31:07,411 - __main__ - INFO - ✅ Database connections closed
+2025-07-25 11:31:07,411 - __main__ - INFO - ✅ System shutdown completed
+2025-07-25 11:32:58,624 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-25 11:32:58,638 - agents.database - INFO - Database agent initialized successfully
+2025-07-25 11:32:58,638 - __main__ - INFO - ✅ Database agent initialized
+2025-07-25 11:32:58,638 - __main__ - INFO - ✅ System configuration verified
+2025-07-25 11:33:02,679 - tools.llm_client - INFO - LLM call successful: 15 tokens, $0.0000, 4.04s
+2025-07-25 11:33:02,679 - __main__ - INFO - ✅ LLM connectivity verified
+2025-07-25 11:33:02,679 - __main__ - INFO - 🎉 System initialization completed successfully
+2025-07-25 11:33:02,679 - __main__ - INFO - Running complete workflow
+2025-07-25 11:33:02,680 - __main__ - INFO - 🔄 Starting complete legal research workflow...
+2025-07-25 11:33:02,680 - __main__ - INFO - 📰 Step 1: Web scraping legal news sources...
+2025-07-25 11:33:03,435 - agents.web_scraper - INFO - Discovered 2 article URLs for Reuters Legal
+2025-07-25 11:33:11,777 - agents.web_scraper - INFO - Completed scraping batch 4393b792-e1a4-4bec-901e-9671770d5df1: 0/2 successful
+2025-07-25 11:33:14,485 - agents.web_scraper - INFO - Discovered 2 article URLs for Reuters Government
+2025-07-25 11:33:21,351 - agents.web_scraper - INFO - Completed scraping batch 52b470ad-626b-4913-a046-d84abff98b76: 0/2 successful
+2025-07-25 11:33:25,407 - agents.web_scraper - INFO - Discovered 2 article URLs for ABA Journal
+2025-07-25 11:33:34,383 - agents.web_scraper - INFO - Completed scraping batch cefd03af-f498-4c70-b1eb-6ce92b58633f: 0/2 successful
+2025-07-25 11:33:38,134 - agents.web_scraper - INFO - Discovered 2 article URLs for Law360
+2025-07-25 11:33:49,687 - agents.web_scraper - INFO - Completed scraping batch 8cbb4341-5ce0-4000-80a2-c25a42b365f9: 0/2 successful
+2025-07-25 11:33:52,471 - agents.web_scraper - INFO - Discovered 2 article URLs for SCOTUSblog
+2025-07-25 11:33:58,359 - agents.web_scraper - INFO - Completed scraping batch f7d514c3-894c-42f2-bd43-ee873ff73315: 0/2 successful
+2025-07-25 11:34:01,994 - agents.web_scraper - INFO - Discovered 2 article URLs for U.S. Courts
+2025-07-25 11:34:07,437 - agents.web_scraper - INFO - Completed scraping batch c73620eb-d112-4d67-a3d2-0101479f55e7: 0/2 successful
+2025-07-25 11:34:09,814 - agents.web_scraper - INFO - Discovered 0 article URLs for WIRED Law
+2025-07-25 11:34:09,814 - agents.web_scraper - WARNING - No articles found for source: wired_law
+2025-07-25 11:34:12,069 - agents.web_scraper - INFO - Discovered 0 article URLs for WIRED Tech Policy
+2025-07-25 11:34:12,070 - agents.web_scraper - WARNING - No articles found for source: wired_tech_policy
+2025-07-25 11:34:14,515 - agents.web_scraper - INFO - Discovered 0 article URLs for Axios
+2025-07-25 11:34:14,516 - agents.web_scraper - WARNING - No articles found for source: axios
+2025-07-25 11:34:17,661 - agents.web_scraper - INFO - Discovered 2 article URLs for Justia
+2025-07-25 11:34:23,556 - agents.web_scraper - INFO - Completed scraping batch 39d25d22-e967-4b62-b0df-2def6dcc6084: 0/2 successful
+2025-07-25 11:34:26,945 - agents.web_scraper - INFO - Discovered 2 article URLs for Criminal Law Library Blog
+2025-07-25 11:34:31,883 - agents.web_scraper - INFO - Completed scraping batch 2d001265-a00a-40af-8a39-feec6a8803c4: 0/2 successful
+2025-07-25 11:34:36,971 - agents.web_scraper - INFO - Discovered 2 article URLs for JD Supra
+2025-07-25 11:34:47,959 - agents.web_scraper - INFO - Completed scraping batch 1c1a2df4-0a9d-4970-ad4d-59c9e42ae311: 0/2 successful
+2025-07-25 11:34:51,077 - agents.web_scraper - INFO - Discovered 0 article URLs for Holland & Knight
+2025-07-25 11:34:51,077 - agents.web_scraper - WARNING - No articles found for source: hk_law
+2025-07-25 11:34:55,931 - agents.web_scraper - INFO - Discovered 2 article URLs for Legal Reader
+2025-07-25 11:40:49,509 - __main__ - INFO - 🚀 Initializing Multi-Agent Legal Research System...
+2025-07-25 11:40:49,524 - agents.database - INFO - Database agent initialized successfully
+2025-07-25 11:40:49,524 - __main__ - INFO - ✅ Database agent initialized
+2025-07-25 11:40:49,524 - __main__ - INFO - ✅ System configuration verified
+2025-07-25 11:40:53,340 - tools.llm_client - INFO - LLM call successful: 15 tokens, $0.0000, 3.82s
+2025-07-25 11:40:53,341 - __main__ - INFO - ✅ LLM connectivity verified
+2025-07-25 11:40:53,341 - __main__ - INFO - 🎉 System initialization completed successfully
+2025-07-25 11:40:53,341 - __main__ - INFO - Running scraping-only workflow
+2025-07-25 11:40:53,341 - __main__ - INFO - 🔄 Starting scraping-only workflow...
+2025-07-25 11:40:53,934 - agents.web_scraper - INFO - Discovered 3 article URLs for Reuters Legal
+2025-07-25 11:41:06,066 - agents.web_scraper - INFO - Completed scraping batch cd3c633a-2a85-4afd-b571-1f47bdb1b7b5: 0/3 successful
+2025-07-25 11:41:08,479 - agents.web_scraper - INFO - Discovered 3 article URLs for Reuters Government
+2025-07-25 11:41:19,141 - agents.web_scraper - INFO - Completed scraping batch 7f84e440-5923-49b5-a83f-b6a7b6c9ef03: 0/3 successful
+2025-07-25 11:41:23,112 - agents.web_scraper - INFO - Discovered 3 article URLs for ABA Journal
+2025-07-25 11:41:34,759 - agents.web_scraper - INFO - Completed scraping batch 7d9225eb-a2f1-4405-872d-4273724b3617: 0/3 successful
+2025-07-25 11:41:38,364 - agents.web_scraper - INFO - Discovered 3 article URLs for Law360

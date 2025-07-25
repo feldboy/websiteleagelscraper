@@ -25,8 +25,9 @@ class ArticleSummary(BaseModel):
     """Structured summary of a legal article."""
 
     article_id: str = Field(..., description="ID of the source article")
+    source_name: str = Field(..., description="Name of the source publication")
     summary: str = Field(
-        ..., min_length=100, max_length=200, description="Concise article summary"
+        ..., min_length=50, description="Concise article summary"
     )
     key_points: List[str] = Field(
         ..., min_items=2, max_items=5, description="Key points from the article"
@@ -405,7 +406,7 @@ class SummarizerAgent:
         self.processor = SummaryProcessor()
 
     async def summarize_article(
-        self, article_id: str, title: str, content: str
+        self, article_id: str, title: str, content: str, source_name: str = "Unknown Source"
     ) -> ArticleSummary:
         """
         Create a professional summary of a legal article.
@@ -437,6 +438,7 @@ class SummarizerAgent:
             # Create summary object
             summary = ArticleSummary(
                 article_id=article_id,
+                source_name=source_name,
                 summary=summary_text,
                 key_points=key_points,
                 legal_significance=legal_significance,
@@ -562,6 +564,7 @@ class SummarizerAgent:
             # Create improved summary
             improved_summary = ArticleSummary(
                 article_id=summary.article_id,
+                source_name=summary.source_name,
                 summary=improved_response.get("summary", summary.summary),
                 key_points=improved_response.get("key_points", summary.key_points),
                 legal_significance=improved_response.get(
@@ -725,13 +728,12 @@ class SummarizerAgent:
 
         for article_id in article_ids:
             try:
-                # Get article from database (simplified - would need proper article retrieval)
-                articles = await database_agent.get_unprocessed_articles(limit=1)
+                # Get specific article from database by ID
+                article = await database_agent.get_article_by_id(article_id)
 
-                if articles:
-                    article = articles[0]
+                if article:
                     summary = await self.summarize_article(
-                        article_id, article["title"], article["content"]
+                        article_id, article["title"], article["content"], article["source_name"]
                     )
                     summaries.append(summary)
 
